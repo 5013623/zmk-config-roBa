@@ -29,29 +29,39 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
+        MUHENKAN {
+            bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        HENKAN {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <18 19>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        l {
+            bindings = <&kp L>;
+            key-positions = <12 11>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        q {
+            bindings = <&kp Q>;
+            key-positions = <1 2>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <14 13>;
+        };
+
+        search {
+            bindings = <&kp LS(LC(F))>;
+            key-positions = <23 24>;
+        };
+
+        list {
+            bindings = <&kp LS(LC(E))>;
+            key-positions = <32 31>;
         };
     };
 
