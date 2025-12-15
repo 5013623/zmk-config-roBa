@@ -156,7 +156,7 @@
             bindings = <
 &trans     &trans     &kp LG(E)         &kp LG(L)  &trans                                                  &trans         &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
 &kp LC(L)  &kp HOME   &mt LEFT_ALT END  &kp TAB    &kakko3         &bt BT_SEL 0      &trans                &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &kp LS(EQUAL)
-&trans     &kp LG(R)  &kp ESCAPE        &atmark    &kp LA(PERIOD)  &trans            &trans                &underbar      &kp LS(LC(M))  &kakko        &kakko2        &trans
+&trans     &kp LG(R)  &kp ESCAPE        &atmark    &kp LA(LS(F4))  &trans            &trans                &underbar      &kp LS(LC(M))  &kakko        &kakko2        &trans
 &trans     &trans     &trans            &trans     &trans          &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                                 &trans
             >;
 
