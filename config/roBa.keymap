@@ -68,7 +68,17 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <19 20>;
+        };
+
+        c {
+            bindings = <&kp C>;
+            key-positions = <21 20>;
         };
     };
 
@@ -132,9 +142,9 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &kp COMMA       &trans                                               &trans           &kp Z        &kp I  &kp O  &trans
+&trans           &kp W   &kp K           &kp COMMA       &trans                                               &trans           &trans       &kp I  &kp O  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans       &kp Y            &mt RCTRL A  &kp E  &kp U  &kp P
-&trans           &kp R   &kp F           &kp M           &kp B                  &trans           &trans       &kp G            &kp D        &kp C  &kp V  &trans
+&trans           &kp R   &kp F           &kp M           &kp B                  &trans           &trans       &trans           &kp D        &kp G  &kp Z  &trans
 &trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                             &trans
             >;
 
@@ -143,8 +153,8 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &kp LS(LA(F12))  &trans                                    &trans     &kp N7        &kp N8        &kp N9        &trans
-&kp F2  &kp PERIOD         &trans       &kp F12          &kp SEMICOLON  &bt BT_SEL 1       &trans  &corron    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &kp LS(LA(F12))  &trans                                    &trans     &trans        &kp N8        &kp N9        &trans
+&kp F2  &kp PERIOD         &corron      &kp F12          &kp SEMICOLON  &bt BT_SEL 1       &trans  &kp N7     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
 &trans  &kp F5             &kp F10      &kp F11          &kp F7         &trans             &trans  &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans  &trans             &trans       &trans           &kp PAGE_UP    &kp PAGE_DOWN      &trans  &kp DOT                                              &trans
             >;
@@ -154,10 +164,10 @@
 
         NUM {
             bindings = <
-&trans     &trans     &kp LG(E)         &kp LG(L)  &trans                                                  &trans         &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
+&trans     &trans     &kp LG(E)         &kp LG(L)  &trans                                                  &trans         &trans         &kp UP_ARROW  &kp LS(LC(O))  &trans
 &kp LC(L)  &kp HOME   &mt LEFT_ALT END  &kp TAB    &kakko3         &bt BT_SEL 0      &trans                &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &kp LS(EQUAL)
 &trans     &kp LG(R)  &kp ESCAPE        &atmark    &kp LA(LS(F4))  &trans            &trans                &underbar      &kp LS(LC(M))  &kakko        &kakko2        &trans
-&trans     &trans     &trans            &trans     &trans          &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                                 &trans
+&trans     &trans     &trans            &trans     &kp LS(LG(S))   &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -176,7 +186,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4   &trans     &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &mkp MB4   &mkp MB5   &trans
 &trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1   &mkp MB3   &mkp MB2   &kp LC(Z)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
