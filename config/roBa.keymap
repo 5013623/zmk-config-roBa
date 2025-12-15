@@ -80,6 +80,16 @@
             bindings = <&kp C>;
             key-positions = <20 19>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <17 18>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
