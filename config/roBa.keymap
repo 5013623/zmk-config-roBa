@@ -153,10 +153,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &kp LS(LA(F12))  &trans                                    &trans     &trans        &kp N8        &kp N9        &trans
-&kp F2  &kp PERIOD         &corron      &kp F12          &kp SEMICOLON  &bt BT_SEL 1       &trans  &kp N7     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &kp F5             &kp F10      &kp F11          &kp F7         &trans             &trans  &kp SLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans             &trans       &trans           &kp PAGE_UP    &kp PAGE_DOWN      &trans  &kp DOT                                              &trans
+&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &kp LS(LA(F12))  &trans                                    &trans   &trans        &kp N8        &kp N9        &trans
+&kp F2  &kp SLASH          &corron      &kp F12          &kp SEMICOLON  &bt BT_SEL 1       &trans  &kp N7   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &kp F5             &kp F10      &kp F11          &kp F7         &trans             &trans  &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans             &trans       &trans           &kp PAGE_UP    &kp PAGE_DOWN      &trans  &kp DOT                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -164,9 +164,9 @@
 
         NUM {
             bindings = <
-&trans     &trans     &kp LG(E)         &kp LG(L)  &trans                                                  &trans         &trans         &kp UP_ARROW  &kp LS(LC(O))  &trans
+&trans     &underbar  &kp LG(E)         &kp LG(L)  &trans                                                  &trans         &trans         &kp UP_ARROW  &kp LS(LC(O))  &trans
 &kp LC(L)  &kp HOME   &mt LEFT_ALT END  &kp TAB    &kakko3         &bt BT_SEL 0      &trans                &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &kp LS(EQUAL)
-&trans     &kp LG(R)  &kp ESCAPE        &atmark    &kp LA(LS(F4))  &trans            &trans                &underbar      &kp LS(LC(M))  &kakko        &kakko2        &trans
+&trans     &kp LG(R)  &kp ESCAPE        &atmark    &kp LA(LS(F4))  &trans            &trans                &trans         &kp LS(LC(M))  &kakko        &kakko2        &trans
 &trans     &trans     &trans            &trans     &kp LS(LG(S))   &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                                 &trans
             >;
 
