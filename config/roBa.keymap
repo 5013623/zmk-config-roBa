@@ -66,11 +66,46 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        kakko: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp LS(N8) &kp LS(N9) &kp LEFT_ARROW>;
             label = "TO_LAYER_0";
+        };
+
+        kakko2: kakko2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp LS(COMMA) &kp LS(PERIOD) &kp LEFT_ARROW>;
+            label = "KAKKO2";
+        };
+
+        corron: corron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_HENKAN &kp K &kp O &kp R &kp O &kp N &kp SPACE &kp ENTER &kp INT_MUHENKAN>;
+            label = "CORRON";
+        };
+
+        kakko3: kakko3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET &kp NON_US_BACKSLASH &kp LEFT>;
+            label = "KAKKO3";
+        };
+
+        atmark: atmark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp LEFT_BRACKET>;
+            label = "ATMARK";
+        };
+
+        underbar: underbar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_HENKAN &kp A &kp N &kp N &kp D &kp A &kp MINUS &kp B &kp A &kp MINUS &kp SPACE &kp ENTER &kp INT_MUHENKAN>;
+            label = "UNDERBAR";
         };
     };
 
@@ -78,7 +113,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&kakko>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -101,22 +136,24 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans   &trans   &trans                      &trans   &kp N7        &kp N8        &kp N9        &trans
-&kp F2  &trans  &trans   &trans   &trans  &trans      &trans  &kp F6   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &kp F5  &kp F10  &kp F11  &kp F7  &trans      &trans  &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F11
-&trans  &trans  &trans   &trans   &trans  &trans      &trans  &kp DOT                                            &trans
+&trans  &trans  &trans   &trans   &trans                       &trans   &kp N7        &kp N8        &kp N9        &trans
+&kp F2  &trans  &trans   &trans   &kakko3  &trans      &trans  &corron  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &kp F5  &kp F10  &kp F11  &kp F7   &trans      &trans  &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F11
+&trans  &trans  &trans   &trans   &trans   &trans      &trans  &kp DOT                                            &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         NUM {
             bindings = <
-&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)        &trans                                    &trans            &kp LS(LG(S))  &kp UP_ARROW    &kp LS(LC(O))    &trans
-&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB          &kp ASTERISK    &bt BT_SEL 0      &trans  &kp LS(LC(H))     &kp LEFT       &kp DOWN        &kp RIGHT        &kp PERCENT
-&trans     &kp LG(R)    &kp ESCAPE        &kp KP_NUMBER_3  &kp LA(PERIOD)  &kp EQUAL         &trans  &kp LEFT_BRACKET  &kp LS(LC(M))  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&trans     &trans       &trans            &trans           &trans          &trans            &trans  &trans                                                            &trans
+&trans     &kp PAGE_UP  &kp LG(E)         &kp LG(L)  &trans                                    &trans         &kp LS(LG(S))  &kp UP_ARROW  &kp LS(LC(O))  &trans
+&kp LC(L)  &kp HOME     &mt LEFT_ALT END  &kp TAB    &kakko3         &bt BT_SEL 0      &trans  &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &kp LS(EQUAL)
+&trans     &kp LG(R)    &kp ESCAPE        &atmark    &kp LA(PERIOD)  &trans            &trans  &underbar      &kp LS(LC(M))  &kakko        &kakko2        &trans
+&trans     &trans       &trans            &trans     &trans          &trans            &trans  &trans                                                     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         ARROW {
