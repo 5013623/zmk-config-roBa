@@ -117,7 +117,7 @@
         kakko3: kakko3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET &kp NON_US_BACKSLASH &kp LEFT>;
+            bindings = <&kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT>;
             label = "KAKKO3";
         };
 
