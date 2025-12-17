@@ -73,7 +73,7 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <20 21>;
+            key-positions = <20 18>;
         };
 
         c {
@@ -89,6 +89,11 @@
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <30 31>;
+        };
+
+        exp {
+            bindings = <&kp LG(E)>;
+            key-positions = <25 24>;
         };
     };
 
