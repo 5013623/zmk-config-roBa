@@ -179,7 +179,7 @@
 
         NUM {
             bindings = <
-&trans     &underbar  &kp LG(E)         &kp LG(L)  &trans                                                  &trans         &trans         &kp UP_ARROW  &kp LS(LC(O))  &trans
+&trans     &trans     &trans            &kp LG(L)  &trans                                                  &trans         &trans         &kp UP_ARROW  &kp LS(LC(O))  &trans
 &kp LC(L)  &kp HOME   &mt LEFT_ALT END  &kp TAB    &kakko3         &bt BT_SEL 0      &trans                &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT      &kp LS(EQUAL)
 &trans     &kp LG(R)  &kp ESCAPE        &atmark    &kp LA(LS(F4))  &trans            &trans                &trans         &kp LS(LC(M))  &kakko        &kakko2        &trans
 &trans     &trans     &trans            &trans     &kp LS(LG(S))   &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                                 &trans
@@ -201,10 +201,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &mkp MB4   &mkp MB5   &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1   &mkp MB3   &mkp MB2   &kp LC(Z)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans     &trans     &mkp MB4  &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &underbar  &mkp MB1   &mkp MB3  &mkp MB2   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LC(X)  &trans    &kp LC(Z)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
             >;
         };
 
