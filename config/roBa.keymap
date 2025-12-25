@@ -64,13 +64,13 @@
         search {
             bindings = <&kp LC(L)>;
             key-positions = <30 32>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         list {
             bindings = <&kp LS(LC(O))>;
             key-positions = <18 20>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         x {
@@ -148,6 +148,12 @@
             bindings = <&kp F>;
             key-positions = <32 31>;
             layers = <0>;
+        };
+
+        nine {
+            bindings = <&kp N9>;
+            key-positions = <19 20>;
+            layers = <1>;
         };
     };
 
