@@ -46,42 +46,49 @@
         l {
             bindings = <&kp L>;
             key-positions = <12 11>;
+            layers = <0>;
         };
 
         q {
             bindings = <&kp Q>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         j {
             bindings = <&kp J>;
             key-positions = <14 13>;
+            layers = <0>;
         };
 
         search {
             bindings = <&kp LC(L)>;
-            key-positions = <23 24>;
+            key-positions = <30 32>;
+            layers = <0>;
         };
 
         list {
             bindings = <&kp LS(LC(O))>;
-            key-positions = <32 31>;
+            key-positions = <18 20>;
             layers = <0>;
         };
 
         x {
             bindings = <&kp X>;
             key-positions = <7 8>;
+            layers = <0>;
         };
 
         v {
             bindings = <&kp V>;
             key-positions = <25 26>;
+            layers = <0>;
         };
 
         c {
             bindings = <&kp C>;
             key-positions = <20 19>;
+            layers = <0>;
         };
 
         copy {
@@ -107,18 +114,6 @@
             layers = <1>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <20 19>;
-            layers = <1>;
-        };
-
-        corron {
-            bindings = <&corron>;
-            key-positions = <31 32>;
-            layers = <1>;
-        };
-
         plus {
             bindings = <&kp LS(SEMICOLON)>;
             key-positions = <31 30>;
@@ -126,7 +121,7 @@
         };
 
         kakeru {
-            bindings = <&kp LS(LC(SQT))>;
+            bindings = <&kp LS(SQT)>;
             key-positions = <18 17>;
             layers = <1>;
         };
@@ -140,6 +135,11 @@
         screenshot {
             bindings = <&kp LS(LG(S))>;
             key-positions = <23 25>;
+        };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <23 24>;
         };
     };
 
@@ -214,10 +214,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans       &trans         &trans           &trans                                               &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &kp PAGE_UP  &kp PAGE_DOWN  &kp F12          &kp SEMICOLON             &bt BT_SEL 1       &trans  &kp N7  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &kp F5       &kp F10        &kp F11          &kp F7                    &trans             &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans       &trans         &kp LS(LA(F12))  &mt LEFT_SHIFT LS(LC(F))  &kp LS(LC(E))      &trans  &trans                                            &trans
+&trans  &trans     &trans   &trans           &trans                                               &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &kp SLASH  &corron  &kp F12          &kp SEMICOLON             &bt BT_SEL 1       &trans  &kp N7  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &kp F5     &kp F10  &kp F11          &kp F7                    &trans             &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans     &trans   &kp LS(LA(F12))  &mt LEFT_SHIFT LS(LC(F))  &kp LS(LC(E))      &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
