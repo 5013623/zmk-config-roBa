@@ -106,7 +106,7 @@
         exp {
             bindings = <&kp LG(E)>;
             key-positions = <25 24>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         period {
@@ -130,7 +130,7 @@
         sleep {
             bindings = <&kp LG(L)>;
             key-positions = <11 13>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         screenshot {
