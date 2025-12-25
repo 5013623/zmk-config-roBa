@@ -133,13 +133,13 @@
 
         sleep {
             bindings = <&kp LG(L)>;
-            key-positions = <12 13 11>;
+            key-positions = <11 13>;
             layers = <0>;
         };
 
         screenshot {
             bindings = <&kp LS(LG(S))>;
-            key-positions = <11 12>;
+            key-positions = <23 25>;
         };
     };
 
