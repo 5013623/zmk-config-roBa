@@ -39,6 +39,7 @@
         HENKAN {
             bindings = <&kp INT_HENKAN>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         l {
@@ -64,6 +65,7 @@
         list {
             bindings = <&kp LS(LC(E))>;
             key-positions = <32 31>;
+            layers = <0>;
         };
 
         x {
@@ -84,16 +86,42 @@
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <17 18>;
+            layers = <0>;
         };
 
         paste {
             bindings = <&kp LC(V)>;
             key-positions = <30 31>;
+            layers = <0>;
         };
 
         exp {
             bindings = <&kp LG(E)>;
             key-positions = <25 24>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <18 19>;
+            layers = <1>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <17 18>;
+            layers = <1>;
+        };
+
+        corron {
+            bindings = <&corron>;
+            key-positions = <30 31>;
+            layers = <1>;
+        };
+
+        plus {
+            bindings = <&kp LS(SEMICOLON)>;
+            key-positions = <31 32>;
+            layers = <1>;
         };
     };
 
@@ -168,10 +196,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &kp LS(LA(F12))  &trans                                             &trans   &trans        &kp N8        &kp N9        &trans
-&kp F2  &kp SLASH          &corron      &kp F12          &kp SEMICOLON           &bt BT_SEL 1       &trans  &kp N7   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &kp F5             &kp F10      &kp F11          &kp F7                  &trans             &trans  &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans             &trans       &trans           &mt LEFT_SHIFT PAGE_UP  &kp PAGE_DOWN      &trans  &kp DOT                                            &trans
+&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &kp LS(LA(F12))  &trans                                             &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &kp SLASH          &corron      &kp F12          &kp SEMICOLON           &bt BT_SEL 1       &trans  &kp N7  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &kp F5             &kp F10      &kp F11          &kp F7                  &trans             &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans             &trans       &trans           &mt LEFT_SHIFT PAGE_UP  &kp PAGE_DOWN      &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
