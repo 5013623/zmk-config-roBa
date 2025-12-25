@@ -108,19 +108,25 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <17 18>;
+            key-positions = <20 19>;
             layers = <1>;
         };
 
         corron {
             bindings = <&corron>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
             layers = <1>;
         };
 
         plus {
             bindings = <&kp LS(SEMICOLON)>;
-            key-positions = <31 32>;
+            key-positions = <31 30>;
+            layers = <1>;
+        };
+
+        kakeru {
+            bindings = <&kp LS(LC(SQT))>;
+            key-positions = <18 17>;
             layers = <1>;
         };
     };
@@ -196,10 +202,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LS(SEMICOLON)  &kp LS(SQT)  &trans           &trans                                             &trans  &trans        &kp N8        &kp N9        &trans
-&trans  &kp F2             &kp LC(L)    &kp F12          &kp SEMICOLON           &bt BT_SEL 1       &trans  &kp N7  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &kp F5             &kp F10      &kp F11          &kp F7                  &trans             &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans             &trans       &kp LS(LA(F12))  &mt LEFT_SHIFT PAGE_UP  &kp PAGE_DOWN      &trans  &trans                                            &trans
+&trans  &trans  &trans     &trans           &trans                                             &trans  &trans        &kp N8        &kp N9        &trans
+&trans  &kp F2  &kp LC(L)  &kp F12          &kp SEMICOLON           &bt BT_SEL 1       &trans  &kp N7  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
+&trans  &kp F5  &kp F10    &kp F11          &kp F7                  &trans             &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans     &kp LS(LA(F12))  &mt LEFT_SHIFT PAGE_UP  &kp PAGE_DOWN      &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
