@@ -200,13 +200,13 @@
             tap-ms = <20>;
         };
 
-        tapdance: tapdance {
+        aperiod: aperiod {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE";
+            label = "APERIOD";
             #binding-cells = <0>;
             bindings = <&mt LCTRL A>, <&kp PERIOD>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
         };
 
         RZ: RZ {
@@ -215,7 +215,7 @@
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp Z>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         sd: sd {
@@ -224,7 +224,25 @@
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp D>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
+        };
+
+        td: td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_WIN T>, <&kp D>;
+
+            tapping-term-ms = <300>;
+        };
+
+        hb: hb {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HB";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp B>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -233,10 +251,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans                &trans                                               &trans           &trans     &kp I           &kp O  &trans
-&mt LCTRL MINUS  &sd     &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H                  &to 4            &trans       &kp Y            &tapdance  &mt LEFT_WIN E  &kp U  &kp P
-&trans           &RZ     &kp G           &kp M                 &kp B                  &trans           &trans       &trans           &kp D      &kp F           &kp Z  &trans
-&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                    &trans
+&trans           &kp W   &kp K           &trans                &trans                                               &trans           &trans    &kp I           &kp O  &trans
+&mt LCTRL MINUS  &sd     &mt LEFT_ALT N  &td                   &hb                    &to 4            &trans       &kp Y            &aperiod  &mt LEFT_WIN E  &kp U  &kp P
+&trans           &RZ     &kp G           &kp M                 &kp B                  &trans           &trans       &trans           &kp D     &kp F           &kp Z  &trans
+&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                   &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
