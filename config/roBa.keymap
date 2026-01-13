@@ -205,6 +205,8 @@
             label = "TAPDANCE";
             #binding-cells = <0>;
             bindings = <&mt LCTRL A>, <&kp PERIOD>;
+
+            tapping-term-ms = <200>;
         };
 
         RZ: RZ {
@@ -212,6 +214,8 @@
             label = "RZ";
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp Z>;
+
+            tapping-term-ms = <200>;
         };
 
         sd: sd {
@@ -219,6 +223,8 @@
             label = "SD";
             #binding-cells = <0>;
             bindings = <&kp S>, <&kp D>;
+
+            tapping-term-ms = <200>;
         };
     };
 
