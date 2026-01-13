@@ -199,6 +199,13 @@
 
             tap-ms = <20>;
         };
+
+        tapdance: tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE";
+            #binding-cells = <0>;
+            bindings = <&mt LCTRL A>, <&kp PERIOD>;
+        };
     };
 
     keymap {
@@ -206,10 +213,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans                &trans                                               &trans           &trans       &kp I           &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H                  &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &kp P
-&trans           &kp R   &kp G           &kp M                 &kp B                  &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
-&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
+&trans           &kp W   &kp K           &trans                &trans                                               &trans           &trans     &kp I           &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H                  &to 4            &trans       &kp Y            &tapdance  &mt LEFT_WIN E  &kp U  &kp P
+&trans           &kp R   &kp G           &kp M                 &kp B                  &trans           &trans       &trans           &kp D      &kp F           &kp Z  &trans
+&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                    &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
