@@ -260,7 +260,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "KAKKOTAP";
             #binding-cells = <0>;
-            bindings = <&kakkotap>, <&kakko2>;
+            bindings = <&kakko>, <&kakko2>;
 
             tapping-term-ms = <300>;
         };
