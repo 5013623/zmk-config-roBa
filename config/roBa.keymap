@@ -260,9 +260,18 @@
             compatible = "zmk,behavior-tap-dance";
             label = "KAKKOTAP";
             #binding-cells = <0>;
-            bindings = <&kakko>, <&kakko2>;
+            bindings = <&kakko>, <&kakko2>, <&kakko3>;
 
             tapping-term-ms = <300>;
+        };
+
+        atunder: atunder {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ATUNDER";
+            #binding-cells = <0>;
+            bindings = <&underbar>, <&atmark>, <&kp LS(EQUAL)>;
+
+            tapping-term-ms = <280>;
         };
     };
 
@@ -282,10 +291,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &desktop   &kp F7        &trans        &trans                                              &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &kp SLASH  &corron       &search       &kp SEMICOLON             &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3              &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans     &trans        &kp LG(R)     &mt LEFT_SHIFT LS(LC(F))  &forvscode        &trans  &trans                                            &trans
+&trans  &desktop   &kp F7        &trans    &trans                                          &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &kp SLASH  &corron       &search   &kp SEMICOLON         &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &sim       &kp NUMBER_1  &atunder  &trans                &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans     &trans        &trans    &mt LEFT_SHIFT LG(R)  &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -293,10 +302,10 @@
 
         NUM {
             bindings = <
-&trans     &trans     &trans            &trans   &trans                                                  &trans      &trans    &kp UP_ARROW  &trans     &trans
-&underbar  &kp HOME   &mt LEFT_ALT END  &kp TAB  &kakko3         &bt BT_SEL 0      &trans                &teams      &kp LEFT  &kp DOWN      &kp RIGHT  &kp LS(EQUAL)
-&trans     &kp LG(R)  &kp ESCAPE        &atmark  &kp LA(LS(F4))  &trans            &trans                &trans      &trans    &kakkotap     &trans     &trans
-&trans     &trans     &trans            &trans   &trans          &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
+&trans  &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
+&trans  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans    &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &kakkotap     &trans     &trans
+&trans  &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
