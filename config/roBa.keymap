@@ -49,12 +49,6 @@
             layers = <0>;
         };
 
-        j {
-            bindings = <&kp J>;
-            key-positions = <14 13>;
-            layers = <0>;
-        };
-
         search {
             bindings = <&kp LC(L)>;
             key-positions = <30 32>;
@@ -67,27 +61,9 @@
             layers = <0 4>;
         };
 
-        x {
-            bindings = <&kp X>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
         c {
-            bindings = <&kp C>;
+            bindings = <&shortcuts>;
             key-positions = <20 19>;
-            layers = <0 4>;
-        };
-
-        copy {
-            bindings = <&kp LC(C)>;
-            key-positions = <17 18>;
-            layers = <0 4>;
-        };
-
-        paste {
-            bindings = <&kp LC(V)>;
-            key-positions = <30 31>;
             layers = <0 4>;
         };
 
@@ -263,7 +239,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HENKANCUT";
             #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN>, <&kp LC(X)>, <&kp X>;
+            bindings = <&kp INT_HENKAN>, <&kp C>, <&kp X>;
 
             tapping-term-ms = <270>;
         };
@@ -275,6 +251,15 @@
             bindings = <&kp L>, <&kp Q>;
 
             tapping-term-ms = <300>;
+        };
+
+        shortcuts: shortcuts {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHORTCUTS";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>, <&kp LC(V)>, <&kp LC(X)>;
+
+            tapping-term-ms = <270>;
         };
     };
 
