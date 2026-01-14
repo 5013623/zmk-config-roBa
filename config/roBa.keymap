@@ -193,15 +193,6 @@
             tap-ms = <20>;
         };
 
-        slaz: slaz {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SLAZ";
-            #binding-cells = <0>;
-            bindings = <&mt LCTRL MINUS>, <&kp Z>;
-
-            tapping-term-ms = <300>;
-        };
-
         conmaperi: conmaperi {
             compatible = "zmk,behavior-tap-dance";
             label = "CONMAPERI";
@@ -217,7 +208,7 @@
             #binding-cells = <0>;
             bindings = <&kp F5>, <&kp F10>, <&kp F11>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
         };
 
         search: search {
@@ -226,7 +217,7 @@
             #binding-cells = <0>;
             bindings = <&kp F12>, <&kp LS(LA(F12))>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
         };
 
         forvscode: forvscode {
@@ -235,7 +226,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LC(F))>, <&kp LS(LC(E))>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
         };
 
         desktop: desktop {
@@ -244,7 +235,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LC(RIGHT))>, <&kp LC(LG(LEFT))>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
         };
 
         teams: teams {
@@ -253,7 +244,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(M))>, <&kp LC(LS(H))>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
         };
 
         kakkotap: kakkotap {
@@ -273,6 +264,15 @@
 
             tapping-term-ms = <280>;
         };
+
+        sample: sample {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SAMPLE";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp V>, <&kp L>;
+
+            tapping-term-ms = <230>;
+        };
     };
 
     keymap {
@@ -280,10 +280,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans            &trans                                    &trans           &trans       &kp I           &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T    &kp H       &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &kp P
-&trans           &kp R   &kp G           &kp M             &kp B       &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
-&trans           &trans  &trans          &mt LEFT_SHIFT D  &conmaperi  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
+&trans           &kp W   &kp K           &trans          &trans                                    &trans           &trans       &kp I           &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H       &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &kp P
+&trans           &kp R   &kp G           &kp M           &kp B       &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
+&trans           &trans  &trans          &sample         &conmaperi  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
