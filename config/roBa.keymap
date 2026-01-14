@@ -253,6 +253,15 @@
 
             tapping-term-ms = <300>;
         };
+
+        teams: teams {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TEAMS";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(M))>, <&kp LC(LS(H))>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -271,10 +280,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &desktop   &kp LC(LG(RIGHT))  &trans           &trans                                              &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &kp SLASH  &corron            &search          &kp SEMICOLON             &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0
-&trans  &sim       &kp F10            &kp F11          &kp F7                    &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans     &trans             &kp LS(LA(F12))  &mt LEFT_SHIFT LS(LC(F))  &forvscode        &trans  &trans                                            &trans
+&trans  &desktop   &kp F7        &trans           &trans                                              &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &kp SLASH  &corron       &search          &kp SEMICOLON             &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &sim       &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3              &trans            &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
+&trans  &trans     &trans        &kp LS(LA(F12))  &mt LEFT_SHIFT LS(LC(F))  &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -282,10 +291,10 @@
 
         NUM {
             bindings = <
-&trans     &trans     &trans            &trans   &trans                                                  &trans         &trans         &kp UP_ARROW  &trans     &trans
-&underbar  &kp HOME   &mt LEFT_ALT END  &kp TAB  &kakko3         &bt BT_SEL 0      &trans                &kp LS(LC(H))  &kp LEFT       &kp DOWN      &kp RIGHT  &kp LS(EQUAL)
-&trans     &kp LG(R)  &kp ESCAPE        &atmark  &kp LA(LS(F4))  &trans            &trans                &trans         &kp LS(LC(M))  &kakko        &kakko2    &trans
-&trans     &trans     &trans            &sleep   &trans          &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                             &trans
+&trans     &trans     &trans            &trans   &trans                                                  &trans      &trans         &kp UP_ARROW  &trans     &trans
+&underbar  &kp HOME   &mt LEFT_ALT END  &kp TAB  &kakko3         &bt BT_SEL 0      &trans                &teams      &kp LEFT       &kp DOWN      &kp RIGHT  &kp LS(EQUAL)
+&trans     &kp LG(R)  &kp ESCAPE        &atmark  &kp LA(LS(F4))  &trans            &trans                &trans      &kp LS(LC(M))  &kakko        &kakko2    &trans
+&trans     &trans     &trans            &sleep   &trans          &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
