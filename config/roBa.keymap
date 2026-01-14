@@ -110,9 +110,9 @@
         };
 
         period {
-            bindings = <&kp PERIOD>;
-            key-positions = <18 19>;
-            layers = <1>;
+            bindings = <&conmaperi>;
+            key-positions = <32 31>;
+            layers = <1 0>;
         };
 
         sleep {
@@ -185,7 +185,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CONMAPERI";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT COMMA>, <&mt LSHIFT PERIOD>;
+            bindings = <&kp COMMA>, <&kp PERIOD>;
 
             tapping-term-ms = <280>;
         };
