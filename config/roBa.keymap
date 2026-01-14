@@ -115,18 +115,6 @@
             layers = <1>;
         };
 
-        plus {
-            bindings = <&kp LS(SEMICOLON)>;
-            key-positions = <31 30>;
-            layers = <1>;
-        };
-
-        kakeru {
-            bindings = <&kp LS(SQT)>;
-            key-positions = <18 17>;
-            layers = <1>;
-        };
-
         sleep {
             bindings = <&kp LG(L)>;
             key-positions = <11 13>;
@@ -273,6 +261,15 @@
 
             tapping-term-ms = <230>;
         };
+
+        enzan: enzan {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ENZAN";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp LS(SEMICOLON)>, <&kp LS(SQT)>;
+
+            tapping-term-ms = <270>;
+        };
     };
 
     keymap {
@@ -291,10 +288,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &desktop   &kp F7        &trans    &trans                                          &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &kp SLASH  &corron       &search   &kp SEMICOLON         &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim       &kp NUMBER_1  &atunder  &trans                &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans     &trans        &trans    &mt LEFT_SHIFT LG(R)  &forvscode        &trans  &trans                                            &trans
+&trans  &desktop  &kp F7   &trans    &trans                                          &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &enzan    &corron  &search   &kp SEMICOLON         &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &sim      &trans   &atunder  &trans                &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans    &trans   &trans    &mt LEFT_SHIFT LG(R)  &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
