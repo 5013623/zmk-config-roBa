@@ -32,13 +32,13 @@
         compatible = "zmk,combos";
 
         MUHENKAN {
-            bindings = <&muhenkanv>;
+            bindings = <&muhenkanVJ>;
             key-positions = <12 13>;
             layers = <0>;
         };
 
         HENKAN {
-            bindings = <&henkancut>;
+            bindings = <&henkanCX>;
             key-positions = <18 19>;
             layers = <0>;
         };
@@ -74,7 +74,7 @@
         };
 
         period {
-            bindings = <&conmaperi>;
+            bindings = <&kakkotap>;
             key-positions = <32 31>;
             layers = <1 0>;
         };
@@ -226,18 +226,18 @@
             tapping-term-ms = <270>;
         };
 
-        muhenkanv: muhenkanv {
+        muhenkanVJ: muhenkanVJ {
             compatible = "zmk,behavior-tap-dance";
-            label = "MUHENKANV";
+            label = "MUHENKANVJ";
             #binding-cells = <0>;
             bindings = <&kp INT_MUHENKAN>, <&kp V>, <&kp J>;
 
             tapping-term-ms = <270>;
         };
 
-        henkancut: henkancut {
+        henkanCX: henkanCX {
             compatible = "zmk,behavior-tap-dance";
-            label = "HENKANCUT";
+            label = "HENKANCX";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN>, <&kp C>, <&kp X>;
 
@@ -292,7 +292,7 @@
             bindings = <
 &trans  &trans     &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
 &trans  &kp HOME   &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &kp LG(R)  &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &kakkotap     &trans     &trans
+&trans  &kp LG(R)  &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
 &trans  &trans     &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
             >;
 
