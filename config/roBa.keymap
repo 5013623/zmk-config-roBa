@@ -32,26 +32,20 @@
         compatible = "zmk,combos";
 
         MUHENKAN {
-            bindings = <&kp INT_MUHENKAN>;
+            bindings = <&muhenkanv>;
             key-positions = <12 13>;
             layers = <0>;
         };
 
         HENKAN {
-            bindings = <&kp INT_HENKAN>;
+            bindings = <&henkancut>;
             key-positions = <18 19>;
             layers = <0>;
         };
 
         l {
-            bindings = <&kp L>;
+            bindings = <&LQ>;
             key-positions = <12 11>;
-            layers = <0>;
-        };
-
-        q {
-            bindings = <&kp Q>;
-            key-positions = <1 2>;
             layers = <0>;
         };
 
@@ -76,12 +70,6 @@
         x {
             bindings = <&kp X>;
             key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        v {
-            bindings = <&kp V>;
-            key-positions = <25 26>;
             layers = <0>;
         };
 
@@ -253,15 +241,6 @@
             tapping-term-ms = <280>;
         };
 
-        sample: sample {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SAMPLE";
-            #binding-cells = <0>;
-            bindings = <&kp C>, <&kp V>, <&kp L>;
-
-            tapping-term-ms = <230>;
-        };
-
         enzan: enzan {
             compatible = "zmk,behavior-tap-dance";
             label = "ENZAN";
@@ -269,6 +248,33 @@
             bindings = <&kp SLASH>, <&kp LS(SEMICOLON)>, <&kp LS(SQT)>;
 
             tapping-term-ms = <270>;
+        };
+
+        muhenkanv: muhenkanv {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MUHENKANV";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN>, <&kp V>, <&kp J>;
+
+            tapping-term-ms = <270>;
+        };
+
+        henkancut: henkancut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HENKANCUT";
+            #binding-cells = <0>;
+            bindings = <&kp INT_HENKAN>, <&kp LC(X)>, <&kp X>;
+
+            tapping-term-ms = <270>;
+        };
+
+        LQ: LQ {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LQ";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp Q>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -288,10 +294,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &desktop  &kp F7   &trans    &trans                                          &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &enzan    &corron  &search   &kp SEMICOLON         &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim      &trans   &atunder  &trans                &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans    &trans   &trans    &mt LEFT_SHIFT LG(R)  &forvscode        &trans  &trans                                            &trans
+&trans  &desktop  &kp F7   &trans    &trans                                   &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &enzan    &corron  &search   &kp SEMICOLON  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &sim      &trans   &atunder  &trans         &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans    &trans   &trans    &trans         &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -299,10 +305,10 @@
 
         NUM {
             bindings = <
-&trans  &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
-&trans  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans    &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &kakkotap     &trans     &trans
-&trans  &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
+&trans  &trans     &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
+&trans  &kp HOME   &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &kp LG(R)  &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &kakkotap     &trans     &trans
+&trans  &trans     &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
