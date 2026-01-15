@@ -10,7 +10,6 @@
     quick-tap-ms = <0>;
 };
 
-
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
@@ -18,31 +17,36 @@
     arrows {
         layers = <2>;
         bindings =
-            <&mkp MB4>,          // 左フリック: 戻る（マウスボタン4）
-            <&mkp MB5>,          // 右フリック: 進む（マウスボタン5）
-            <&kp LC(L)>,         // 上フリック: Ctrl + L
-            <&kp LG(R)>;         // 下フリック: Win  + R
-
+            <&mkp MB4>,
+            // 左フリック: 戻る（マウスボタン4）,
+            <&mkp MB5>,
+            // 右フリック: 進む（マウスボタン5）,
+            <&kp LC(L)>,
+            // 上フリック: Ctrl + L,
+            <&kp LG(R)>;
+         // 下フリック: Win  + R
         // 反応チューニング（素早く方向を切り分けたい場合は tick を短めに）
-        tick    = <10>;
+
+        tick = <10>;
         wait-ms = <5>;
-        tap-ms  = <5>;
+        tap-ms = <5>;
     };
 
     arrows_l3 {
         layers = <3>;
         bindings =
-            <&kp LC(C)>, /* 左フリック: Ctrl + C（コピー） */
-            <&kp LC(V)>, /* 右フリック: Ctrl + V（ペースト） */
-            <&kp LC(X)>, /* 上フリック: Ctrl + X（カット） */
-            <&kp LC(Z)>; /* 下フリック: Ctrl + Z（元に戻す） */
-
-        tick    = <10>;
+            <&kp LC(C)>,
+            /* 左フリック: Ctrl + C（コピー） */,
+            <&kp LC(V)>,
+            /* 右フリック: Ctrl + V（ペースト） */,
+            <&kp LC(X)>,
+            /* 上フリック: Ctrl + X（カット） */,
+            <&kp LC(Z)>;
+ /* 下フリック: Ctrl + Z（元に戻す） */
+        tick = <10>;
         wait-ms = <5>;
-        tap-ms  = <5>;
+        tap-ms = <5>;
     };
-
-
 };
 
 / {
@@ -313,10 +317,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans           &trans                                      &trans           &trans       &kp I           &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H         &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &kp P
-&trans           &kp R   &kp G           &kp M            &kp B         &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
-&trans           &trans  &trans          &mt LSHFT COMMA  &conmaperiod  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
+&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O    &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &lt 3 U  &kp P
+&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z    &trans
+&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                        &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
