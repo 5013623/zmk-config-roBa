@@ -18,7 +18,7 @@
         layers = <2>;
         bindings = <&mkp MB5>, <&mkp MB4>, <&kp LC(L)>, <&kp LG(R)>;
 
-        tick = <200>;
+        tick = <150>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
@@ -27,7 +27,7 @@
         layers = <3>;
         bindings = <&kp LC(V)>, <&kp LC(C)>, <&kp LC(X)>, <&kp LC(Z)>;
 
-        tick = <200>;
+        tick = <150>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
