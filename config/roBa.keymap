@@ -1,8 +1,8 @@
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
@@ -16,11 +16,7 @@
 
     arrows {
         layers = <2>;
-        bindings =
-            <&mkp MB5>,
-            <&mkp MB4>,
-            <&kp LC(L)>,
-            <&kp LG(R)>;
+        bindings = <&mkp MB5>, <&mkp MB4>, <&kp LC(L)>, <&kp LG(R)>;
 
         tick = <200>;
         wait-ms = <5>;
@@ -29,11 +25,8 @@
 
     arrows_l3 {
         layers = <3>;
-        bindings =
-            <&kp LC(V)>,
-            <&kp LC(C)>,
-            <&kp LC(X)>,
-            <&kp LC(Z)>;
+        bindings = <&kp LC(V)>, <&kp LC(C)>, <&kp LC(X)>, <&kp LC(Z)>;
+
         tick = <200>;
         wait-ms = <5>;
         tap-ms = <5>;
@@ -352,10 +345,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2   &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &kp LC(Z)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mkp MB3  &trans  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
