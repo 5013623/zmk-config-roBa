@@ -29,6 +29,20 @@
         tap-ms  = <5>;
     };
 
+    arrows_l3 {
+        layers = <3>;
+        bindings =
+            <&kp LC(C)>, /* 左フリック: Ctrl + C（コピー） */
+            <&kp LC(V)>, /* 右フリック: Ctrl + V（ペースト） */
+            <&kp LC(X)>, /* 上フリック: Ctrl + X（カット） */
+            <&kp LC(Z)>; /* 下フリック: Ctrl + Z（元に戻す） */
+
+        tick    = <10>;
+        wait-ms = <5>;
+        tap-ms  = <5>;
+    };
+
+
 };
 
 / {
