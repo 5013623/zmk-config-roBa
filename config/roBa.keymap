@@ -56,7 +56,7 @@
         };
 
         COMBO_search {
-            bindings = <&kp LC(L)>;
+            bindings = <&list>;
             key-positions = <30 32>;
             layers = <0 4>;
         };
@@ -294,6 +294,33 @@
 
             tapping-term-ms = <270>;
         };
+
+        list: list {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LIST";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>, <&kp LC(L)>;
+
+            tapping-term-ms = <265>;
+        };
+
+        mouse34: mouse34 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSE34";
+            #binding-cells = <0>;
+            bindings = <&mkp MB3>, <&mkp MB4>;
+
+            tapping-term-ms = <265>;
+        };
+
+        mouse25: mouse25 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSE25";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2>, <&mkp MB5>;
+
+            tapping-term-ms = <265>;
+        };
     };
 
     keymap {
@@ -301,10 +328,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O    &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U    &lt 3 P
-&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z    &trans
-&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                        &trans
+&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
+&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -345,10 +372,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
