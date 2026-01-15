@@ -302,7 +302,7 @@
         default_layer {
             bindings = <
 &trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O    &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &lt 3 U  &kp P
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U    &lt 3 P
 &trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z    &trans
 &trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                        &trans
             >;
@@ -346,7 +346,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mkp MB3  &lt ARROW &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
