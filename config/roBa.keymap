@@ -68,7 +68,7 @@
         };
 
         exp {
-            bindings = <&kp LG(E)>;
+            bindings = <&atunder>;
             key-positions = <25 24>;
             layers = <0 4>;
         };
@@ -297,10 +297,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &desktop  &kp F7   &trans    &trans                                   &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &enzan    &corron  &search   &kp SEMICOLON  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim      &trans   &atunder  &trans         &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans    &trans   &trans    &trans         &forvscode        &trans  &trans                                            &trans
+&trans  &trans  &trans   &trans    &trans                                   &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &enzan  &corron  &search   &kp SEMICOLON  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &sim    &trans   &kp F7    &trans         &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans   &desktop  &trans         &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
