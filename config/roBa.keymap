@@ -32,7 +32,7 @@
         compatible = "zmk,combos";
 
         COMBO_MUHENKAN {
-            bindings = <&muhenkanVJ>;
+            bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
             layers = <0>;
         };
@@ -56,7 +56,7 @@
         };
 
         COMBO_list {
-            bindings = <&kp LS(LC(O))>;
+            bindings = <&favVJ>;
             key-positions = <18 20>;
             layers = <0 4>;
         };
@@ -217,15 +217,6 @@
             tapping-term-ms = <270>;
         };
 
-        muhenkanVJ: muhenkanVJ {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MUHENKANVJ";
-            #binding-cells = <0>;
-            bindings = <&kp INT_MUHENKAN>, <&kp V>, <&kp J>;
-
-            tapping-term-ms = <270>;
-        };
-
         henkanCX: henkanCX {
             compatible = "zmk,behavior-tap-dance";
             label = "HENKANCX";
@@ -276,6 +267,15 @@
             label = "CORRONSEMI";
             #binding-cells = <0>;
             bindings = <&corron>, <&kp SEMICOLON>;
+
+            tapping-term-ms = <270>;
+        };
+
+        favVJ: favVJ {
+            compatible = "zmk,behavior-tap-dance";
+            label = "FAVVJ";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(O))>, <&kp V>, <&kp J>;
 
             tapping-term-ms = <270>;
         };
