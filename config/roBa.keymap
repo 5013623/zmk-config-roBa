@@ -1,9 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     flavor = "balanced";
@@ -36,13 +36,9 @@
         layers = <3>;
         bindings =
             <&kp LC(C)>,
-            /* 左フリック: Ctrl + C（コピー） */,
             <&kp LC(V)>,
-            /* 右フリック: Ctrl + V（ペースト） */,
             <&kp LC(X)>,
-            /* 上フリック: Ctrl + X（カット） */,
             <&kp LC(Z)>;
- /* 下フリック: Ctrl + Z（元に戻す） */
         tick = <10>;
         wait-ms = <5>;
         tap-ms = <5>;
