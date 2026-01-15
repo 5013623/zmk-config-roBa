@@ -145,15 +145,6 @@
             tap-ms = <20>;
         };
 
-        conmaperi: conmaperi {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CONMAPERI";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp PERIOD>;
-
-            tapping-term-ms = <280>;
-        };
-
         sim: sim {
             compatible = "zmk,behavior-tap-dance";
             label = "SIM";
@@ -279,6 +270,15 @@
 
             tapping-term-ms = <270>;
         };
+
+        corronsemi: corronsemi {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CORRONSEMI";
+            #binding-cells = <0>;
+            bindings = <&corron>, <&kp SEMICOLON>;
+
+            tapping-term-ms = <270>;
+        };
     };
 
     keymap {
@@ -297,10 +297,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans   &trans    &trans                                   &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &enzan  &corron  &search   &kp SEMICOLON  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim    &trans   &kp F7    &trans         &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans   &desktop  &trans         &forvscode        &trans  &trans                                            &trans
+&trans  &trans  &trans       &trans    &trans                            &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &enzan  &corronsemi  &search   &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &sim    &trans       &kp F7    &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans       &desktop  &trans  &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -308,10 +308,10 @@
 
         NUM {
             bindings = <
-&trans  &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
-&trans  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans    &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
-&trans  &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
+&trans      &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
+&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
+&trans      &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
