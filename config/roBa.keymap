@@ -22,7 +22,7 @@
             <&kp LC(L)>,
             <&kp LG(R)>;
 
-        tick = <500>;
+        tick = <200>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
@@ -34,7 +34,7 @@
             <&kp LC(C)>,
             <&kp LC(X)>,
             <&kp LC(Z)>;
-        tick = <500>;
+        tick = <200>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
