@@ -80,13 +80,13 @@
         };
 
         sleep {
-            bindings = <&kp LG(L)>;
+            bindings = <&Lock>;
             key-positions = <11 13>;
             layers = <0 4>;
         };
 
         screenshot {
-            bindings = <&kp LS(LG(S))>;
+            bindings = <&screenshot>;
             key-positions = <23 25>;
         };
     };
@@ -261,6 +261,24 @@
 
             tapping-term-ms = <270>;
         };
+
+        Lock: Lock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOCK";
+            #binding-cells = <0>;
+            bindings = <&kp LG(E)>, <&kp LG(L)>;
+
+            tapping-term-ms = <270>;
+        };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SCREENSHOT";
+            #binding-cells = <0>;
+            bindings = <&kp LG(R)>, <&kp LS(LG(S))>;
+
+            tapping-term-ms = <270>;
+        };
     };
 
     keymap {
@@ -290,10 +308,10 @@
 
         NUM {
             bindings = <
-&trans  &trans     &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
-&trans  &kp HOME   &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &kp LG(R)  &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
-&trans  &trans     &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
+&trans  &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
+&trans  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans    &kp ESCAPE        &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
+&trans  &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
