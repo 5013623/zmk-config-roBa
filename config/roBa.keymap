@@ -350,10 +350,10 @@
 
         NUM {
             bindings = <
-&trans      &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
-&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
-&trans      &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
+&trans      &trans           &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
+&kp ESCAPE  &kp HOME         &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans      &kp LC(LS(TAB))  &kp LC(TAB)       &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &teams    &trans        &trans     &trans
+&trans      &trans           &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
