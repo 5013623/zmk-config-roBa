@@ -31,61 +31,61 @@
     combos {
         compatible = "zmk,combos";
 
-        MUHENKAN {
+        COMBO_MUHENKAN {
             bindings = <&muhenkanVJ>;
             key-positions = <12 13>;
             layers = <0>;
         };
 
-        HENKAN {
+        COMBO_HENKAN {
             bindings = <&henkanCX>;
             key-positions = <18 19>;
             layers = <0>;
         };
 
-        l {
+        COMBO_LQ {
             bindings = <&LQ>;
             key-positions = <12 11>;
             layers = <0>;
         };
 
-        search {
+        COMBO_search {
             bindings = <&kp LC(L)>;
             key-positions = <30 32>;
             layers = <0 4>;
         };
 
-        list {
+        COMBO_list {
             bindings = <&kp LS(LC(O))>;
             key-positions = <18 20>;
             layers = <0 4>;
         };
 
-        c {
+        COMBO_shortcuts {
             bindings = <&shortcuts>;
             key-positions = <20 19>;
             layers = <0 4>;
         };
 
-        exp {
+        COMBO_atunder {
             bindings = <&atunder>;
             key-positions = <25 24>;
             layers = <0 4>;
         };
 
-        period {
+        COMBO_kakkotap {
             bindings = <&kakkotap>;
             key-positions = <32 31>;
             layers = <1 0>;
         };
 
-        sleep {
+        COMBO_lock {
             bindings = <&Lock>;
             key-positions = <11 13>;
             layers = <0 4>;
         };
 
-        screenshot {
+        COMBO_screenshot {
             bindings = <&screenshot>;
             key-positions = <23 25>;
         };
@@ -330,10 +330,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &mkp MB4  &mkp MB1   &mkp MB3  &mkp MB2   &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &kp LC(X)  &trans    &kp LC(Z)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                    &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2   &mkp MB5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &kp LC(Z)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
