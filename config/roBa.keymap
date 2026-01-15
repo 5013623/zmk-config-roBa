@@ -17,17 +17,12 @@
     arrows {
         layers = <2>;
         bindings =
-            <&mkp MB4>,
-            // 左フリック: 戻る（マウスボタン4）,
             <&mkp MB5>,
-            // 右フリック: 進む（マウスボタン5）,
+            <&mkp MB4>,
             <&kp LC(L)>,
-            // 上フリック: Ctrl + L,
             <&kp LG(R)>;
-         // 下フリック: Win  + R
-        // 反応チューニング（素早く方向を切り分けたい場合は tick を短めに）
 
-        tick = <10>;
+        tick = <500>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
@@ -35,11 +30,11 @@
     arrows_l3 {
         layers = <3>;
         bindings =
-            <&kp LC(C)>,
             <&kp LC(V)>,
+            <&kp LC(C)>,
             <&kp LC(X)>,
             <&kp LC(Z)>;
-        tick = <10>;
+        tick = <500>;
         wait-ms = <5>;
         tap-ms = <5>;
     };
