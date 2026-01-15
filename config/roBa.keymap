@@ -15,17 +15,20 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
+    arrows {
+        layers = <2>;
+        bindings =
+            <&mkp MB4>,          // 左フリック: 戻る（マウスボタン4）
+            <&mkp MB5>,          // 右フリック: 進む（マウスボタン5）
+            <&kp LC(L)>,         // 上フリック: Ctrl + L
+            <&kp LG(R)>;         // 下フリック: Win  + R
+
+        // 反応チューニング（素早く方向を切り分けたい場合は tick を短めに）
+        tick    = <10>;
+        wait-ms = <5>;
+        tap-ms  = <5>;
+    };
+
 };
 
 / {
