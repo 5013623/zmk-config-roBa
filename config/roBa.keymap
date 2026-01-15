@@ -279,6 +279,15 @@
 
             tapping-term-ms = <270>;
         };
+
+        conmaperiod: conmaperiod {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CONMAPERIOD";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp PERIOD>, <&kp LSHIFT>;
+
+            tapping-term-ms = <270>;
+        };
     };
 
     keymap {
