@@ -14,23 +14,13 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
-    arrows {
-        layers = <2>;
-        bindings = <&mkp MB5>, <&mkp MB4>, <&kp LC(L)>, <&kp LG(R)>;
-
-        tick = <150>;
-        wait-ms = <5>;
-        tap-ms = <5>;
-    };
-
-    arrows_l3 {
-        layers = <3>;
-        bindings = <&kp LC(V)>, <&kp LC(C)>, <&kp LC(X)>, <&kp LC(Z)>;
-
-        tick = <150>;
-        wait-ms = <5>;
-        tap-ms = <5>;
-    };
+    //arrows {
+         // layers = <2>;
+          //bindings = <&mkp MB5>, <&mkp MB4>, <&kp LC(L)>, <&kp LG(R)>;
+//  tick = <150>;
+//      wait-ms = <5>;
+//     tap-ms = <5>;
+  //  };
 };
 
 / {
