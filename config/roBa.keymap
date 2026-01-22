@@ -15,12 +15,12 @@
     scroll-layers = <5>;
 
     //arrows {
-         // layers = <2>;
-          //bindings = <&mkp MB5>, <&mkp MB4>, <&kp LC(L)>, <&kp LG(R)>;
-//  tick = <150>;
-//      wait-ms = <5>;
-//     tap-ms = <5>;
-  //  };
+    // layers = <2>;
+    //bindings = <&mkp MB5>, <&mkp MB4>, <&kp LC(L)>, <&kp LG(R)>;
+    //  tick = <150>;
+    //      wait-ms = <5>;
+    //     tap-ms = <5>;
+    //  };
 };
 
 / {
@@ -34,7 +34,7 @@
         };
 
         COMBO_HENKAN {
-            bindings = <&henkanCX>;
+            bindings = <&henkanC>;
             key-positions = <18 19>;
             layers = <0>;
         };
@@ -52,7 +52,7 @@
         };
 
         COMBO_list {
-            bindings = <&favVJ>;
+            bindings = <&favV>;
             key-positions = <18 20>;
             layers = <0 4>;
         };
@@ -84,6 +84,11 @@
         COMBO_screenshot {
             bindings = <&screenshot>;
             key-positions = <23 25>;
+        };
+
+        combo_XJ {
+            bindings = <&XJ>;
+            key-positions = <30 31>;
         };
     };
 
@@ -213,9 +218,9 @@
             tapping-term-ms = <270>;
         };
 
-        henkanCX: henkanCX {
+        henkanC: henkanC {
             compatible = "zmk,behavior-tap-dance";
-            label = "HENKANCX";
+            label = "HENKANC";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN>, <&kp C>, <&kp X>;
 
@@ -267,20 +272,20 @@
             tapping-term-ms = <270>;
         };
 
-        favVJ: favVJ {
+        favV: favV {
             compatible = "zmk,behavior-tap-dance";
-            label = "FAVVJ";
+            label = "FAVV";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(O))>, <&kp V>, <&kp J>;
+            bindings = <&kp LS(LC(O))>, <&kp V>;
 
             tapping-term-ms = <270>;
         };
 
-        conmaperiod: conmaperiod {
+        XJ: XJ {
             compatible = "zmk,behavior-tap-dance";
-            label = "CONMAPERIOD";
+            label = "XJ";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp PERIOD>, <&kp LSHIFT>;
+            bindings = <&kp X>, <&kp J>;
 
             tapping-term-ms = <270>;
         };
@@ -289,7 +294,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LIST";
             #binding-cells = <0>;
-            bindings = <&kp LC(Z)>, <&kp LC(L)>;
+            bindings = <&kp LC(L)>, <&kp LG(X)>;
 
             tapping-term-ms = <265>;
         };
