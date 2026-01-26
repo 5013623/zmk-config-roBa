@@ -294,7 +294,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LIST";
             #binding-cells = <0>;
-            bindings = <&kp LC(L)>, <&kp LG(X)>;
+            bindings = <&kp LC(L)>, <&kp LC(X)>;
 
             tapping-term-ms = <265>;
         };
@@ -336,7 +336,7 @@
             bindings = <
 &trans  &trans  &trans       &trans    &trans                            &trans  &trans        &kp N8        &kp N9        &trans
 &kp F2  &enzan  &corronsemi  &search   &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim    &trans       &kp F7    &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &sim    &kp F13      &kp F7    &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans  &trans  &trans       &desktop  &trans  &forvscode        &trans  &trans                                            &trans
             >;
 
