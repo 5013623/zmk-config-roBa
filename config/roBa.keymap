@@ -12,11 +12,9 @@
 
 &trackball {
     automouse-layer = <4>;
-    scroll-layers = <5>;
-
     arrows {
         layers = <3>;
-        bindings = <&kp LG(D)>, <&kp LG(TAB)>, <&kp F13>, <&kp F13>;
+        bindings = <&kp LG(D)>, <&kp LG(TAB)>, <&kp LG(X)>, <&kp F13>;
 
         tick = <150>;
         wait-ms = <5>;
