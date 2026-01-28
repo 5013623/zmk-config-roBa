@@ -12,6 +12,7 @@
 
 &trackball {
     automouse-layer = <4>;
+
     arrows {
         layers = <3>;
         bindings = <&kp LG(D)>, <&kp LG(TAB)>, <&kp LG(X)>, <&kp F13>;
@@ -322,10 +323,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O    &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &lt 3 U  &kp P
-&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z    &trans
-&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                        &trans
+&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
+&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -335,7 +336,7 @@
             bindings = <
 &trans  &trans  &trans       &trans   &trans                            &trans  &trans        &kp N8        &kp N9        &trans
 &kp F2  &enzan  &corronsemi  &search  &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &sim    &trans       &kp F7   &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &sim    &kp N8       &kp N9   &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans  &trans  &trans       &trans   &trans  &forvscode        &trans  &trans                                            &trans
             >;
 
@@ -355,10 +356,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans            &trans  &trans             &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &kp LG(LC(LEFT))  &trans  &kp LC(LG(RIGHT))  &trans  &trans      &trans  &trans  &teams  &trans  &trans  &trans
-&trans  &trans            &trans  &trans             &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans  &trans             &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans                  &trans  &trans             &trans
+&trans  &trans  &trans  &teams  &trans  &trans      &trans  &trans  &kp LC(LG(LEFT_ARROW))  &trans  &kp LC(LG(RIGHT))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans                  &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
