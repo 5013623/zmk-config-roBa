@@ -21,9 +21,14 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
     arrows2 {
         layers = <3>;
-        bindings = <&kp LC(LG(RIGHT))>, <&kp  LC(LG(LEFT))>, <&kp  F13>, <&kp F13>;
+        bindings =
+            <&kp LC(LG(RIGHT))>,
+            <&kp  LC(LG(LEFT))>,
+            <&kp  F13>,
+            <&kp F13>;
 
         tick = <150>;
         wait-ms = <5>;
@@ -322,10 +327,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
-&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
-&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
+&trans           &kp W   &kp K           &trans          &trans                                           &trans           &trans       &kp I  &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M           &kp B              &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
+&trans           &trans  &trans          &lt 5 COMMA     &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -355,10 +360,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                           &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &teams  &trans            &trans                 &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans            &trans                 &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &teams  &trans  &trans      &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -366,19 +371,19 @@
 
         MOUSE {
             bindings = <
-&trans  &trans     &trans     &trans     &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &to 0       &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
-&trans  &trans     &trans     &trans     &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans     &trans     &trans     &to 4   &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &to 4   &trans      &trans  &trans                                &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans          &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LEFT_SHIFT  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
