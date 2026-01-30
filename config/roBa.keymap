@@ -15,7 +15,7 @@
 
     arrows {
         layers = <5>;
-        bindings = <&mkp MB4>, <&mkp MB5)>, <&kp LG(TAB)>, <&kp LG(X)>;
+        bindings = <&mkp MB4>, <&mkp MB5>, <&kp LG(TAB)>, <&kp LG(X)>;
 
         tick = <150>;
         wait-ms = <5>;
