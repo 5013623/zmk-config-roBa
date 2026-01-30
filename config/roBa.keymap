@@ -314,10 +314,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &lt 3 P
-&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
-&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                                      &trans
+&trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I  &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
+&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -331,7 +331,7 @@
 &trans  &trans  &trans       &sim     &trans  &forvscode        &trans  &trans                                            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
         NUM {
@@ -353,7 +353,7 @@
 &trans  &trans  &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))      &trans  &trans                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         MOUSE {
