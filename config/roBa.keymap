@@ -15,7 +15,7 @@
 
     arrows {
         layers = <5>;
-        bindings = <&mkp MB4>, <&mkp MB5>, <&kp LG(TAB)>, <&kp LG(X)>;
+        bindings = <&mkp MB5>, <&mkp MB4>, <&kp LG(TAB)>, <&kp LG(X)>;
 
         tick = <150>;
         wait-ms = <5>;
@@ -23,7 +23,7 @@
     };
     arrows2 {
         layers = <3>;
-        bindings = <&kp LC(LG(LEFT))>, <&kp  LC(LG(RIGHT))>, <&kp  F13>, <&kp F13>;
+        bindings = <&kp LC(LG(RIGHT))>, <&kp  LC(LG(LEFT))>, <&kp  F13>, <&kp F13>;
 
         tick = <150>;
         wait-ms = <5>;
