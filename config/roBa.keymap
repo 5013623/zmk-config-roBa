@@ -380,10 +380,10 @@
 
         SCROLL {
             bindings = <
-&trans         &kp LS(W)  &kp LS(K)  &trans          &trans                         &trans     &trans     &kp LS(I)  &kp LS(O)  &trans
-&kp LS(MINUS)  &kp LS(S)  &kp LS(N)  &kp LS(T)       &kp LS(H)  &trans      &trans  &kp LS(Y)  &kp LS(A)  &kp LS(E)  &kp LS(U)  &kp LS(P)
-&trans         &kp LS(R)  &kp LS(G)  &kp LS(M)       &kp LS(B)  &trans      &trans  &trans     &kp LS(D)  &kp LS(F)  &kp LS(Z)  &trans
-&trans         &trans     &trans     &kp LEFT_SHIFT  &trans     &trans      &trans  &trans                                      &trans
+&trans         &kp LS(W)  &kp LS(K)  &trans     &trans                         &trans     &trans     &kp LS(I)  &kp LS(O)  &trans
+&kp LS(MINUS)  &kp LS(S)  &kp LS(N)  &kp LS(T)  &kp LS(H)  &trans      &trans  &kp LS(Y)  &kp LS(A)  &kp LS(E)  &kp LS(U)  &kp LS(P)
+&trans         &kp LS(R)  &kp LS(G)  &kp LS(M)  &kp LS(B)  &trans      &trans  &trans     &kp LS(D)  &kp LS(F)  &kp LS(Z)  &trans
+&trans         &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
