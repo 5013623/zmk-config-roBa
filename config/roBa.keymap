@@ -14,8 +14,16 @@
     automouse-layer = <4>;
 
     arrows {
+        layers = <5>;
+        bindings = <&mkp MB4>, <&mkp MB5)>, <&kp LG(TAB)>, <&kp LG(X)>;
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+    arrows2 {
         layers = <3>;
-        bindings = <&kp LG(D)>, <&kp LG(TAB)>, <&kp LG(X)>, <&kp F13>;
+        bindings = <&kp LC(LG(LEFT))>, <&kp  LC(LG(RIGHT))>, <&kp  F13>, <&kp F13>;
 
         tick = <150>;
         wait-ms = <5>;
