@@ -173,15 +173,6 @@
             tapping-term-ms = <280>;
         };
 
-        desktop: desktop {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DESKTOP";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LC(RIGHT))>, <&kp LC(LG(LEFT))>;
-
-            tapping-term-ms = <280>;
-        };
-
         teams: teams {
             compatible = "zmk,behavior-tap-dance";
             label = "TEAMS";
@@ -326,7 +317,7 @@
 &trans           &kp W   &kp K           &trans           &trans                                           &trans           &trans       &kp I           &kp O  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T   &kp H              &to 4            &trans       &kp Y            &mt LCTRL A  &mt LEFT_WIN E  &kp U  &lt 3 P
 &trans           &kp R   &kp G           &kp M            &kp B              &trans           &trans       &trans           &kp D        &kp F           &kp Z  &trans
-&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 1 ENTER  &lt 4 BACKSPACE                                      &trans
+&trans           &trans  &trans          &mt LSHFT COMMA  &mt LSHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -334,10 +325,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans       &trans   &trans                            &trans  &trans        &kp N8        &kp N9               &trans
-&kp F2  &enzan  &corronsemi  &search  &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &mt LSHIFT NUMBER_6  &kp N0
-&trans  &sim    &kp N8       &kp N9   &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3         &trans
-&trans  &trans  &trans       &kp C    &kp V   &forvscode        &trans  &trans                                                   &trans
+&trans  &trans  &trans       &trans   &trans                            &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &enzan  &corronsemi  &search  &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &trans  &trans       &trans   &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans       &sim     &trans  &forvscode        &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -356,10 +347,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans                  &trans  &trans             &trans
-&trans  &trans  &trans  &teams  &trans  &trans      &trans  &trans  &kp LC(LG(LEFT_ARROW))  &trans  &kp LC(LG(RIGHT))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans                  &trans  &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                     &trans
+&trans  &trans  &trans  &trans  &trans                                           &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &teams  &trans            &trans                 &trans  &trans  &trans  &mkp MB4  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans            &trans                 &trans  &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
