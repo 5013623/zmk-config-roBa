@@ -360,10 +360,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &teams  &trans  &trans      &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans             &trans           &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &kp LC(PAGE_DOWN)  &kp LC(PAGE_UP)  &teams  &trans  &trans      &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
+&trans  &trans             &trans           &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans             &trans           &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
