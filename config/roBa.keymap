@@ -113,6 +113,11 @@
             bindings = <&kp V>;
             key-positions = <19 41>;
         };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <13 38>;
+        };
     };
 
     macros {
