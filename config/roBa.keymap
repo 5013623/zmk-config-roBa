@@ -12,16 +12,6 @@
 
 &trackball {
     automouse-layer = <4>;
-
-    arrows {
-        layers = <5>;
-        bindings = <&mkp MB5>, <&mkp MB4>, <&kp LG(TAB)>, <&kp LG(X)>;
-
-        tick = <150>;
-        wait-ms = <5>;
-        tap-ms = <5>;
-    };
-
     arrows2 {
         layers = <3>;
         bindings =
