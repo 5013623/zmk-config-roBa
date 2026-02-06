@@ -103,6 +103,16 @@
             bindings = <&XJ>;
             key-positions = <30 31>;
         };
+
+        c {
+            bindings = <&kp C>;
+            key-positions = <41 18>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <19 41>;
+        };
     };
 
     macros {
