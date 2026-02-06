@@ -12,6 +12,7 @@
 
 &trackball {
     automouse-layer = <4>;
+
     arrows2 {
         layers = <3>;
         bindings =
@@ -90,7 +91,7 @@
         };
 
         combo_XJ {
-            bindings = <&XJ>;
+            bindings = <&kp J>;
             key-positions = <30 31>;
         };
 
@@ -246,7 +247,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HENKANC";
             #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN>, <&kp C>, <&kp X>;
+            bindings = <&kp INT_HENKAN>, <&kp LG(X)>;
 
             tapping-term-ms = <270>;
         };
@@ -300,7 +301,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "FAVV";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(O))>, <&kp V>;
+            bindings = <&kp LS(LC(O))>, <&kp LG(TAB)>;
 
             tapping-term-ms = <270>;
         };
@@ -349,7 +350,7 @@
             bindings = <
 &trans           &kp W   &kp K           &trans                &trans                                      &trans           &trans       &kp I  &kp O  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H         &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
-&trans           &kp R   &kp G           &kp M                 &kp B         &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
+&trans           &kp R   &kp G           &kp M                 &trans        &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
 &trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &lt 5 PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
             >;
 
