@@ -270,7 +270,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHORTCUTS";
             #binding-cells = <0>;
-            bindings = <&kp LC(C)>, <&kp LC(V)>, <&kp LC(X)>;
+            bindings = <&kp LC(C)>, <&kp LC(V)>;
 
             tapping-term-ms = <270>;
         };
