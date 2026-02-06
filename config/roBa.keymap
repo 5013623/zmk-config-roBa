@@ -252,13 +252,13 @@
             tapping-term-ms = <270>;
         };
 
-        LQ: LQ {
+        comaperi: comaperi {
             compatible = "zmk,behavior-tap-dance";
-            label = "LQ";
+            label = "COMAPERI";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&kp Q>;
+            bindings = <&kp COMMA>, <&mt LSHIFT PERIOD>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <280>;
         };
 
         shortcuts: shortcuts {
@@ -348,10 +348,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans                &trans                                      &trans           &trans       &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H         &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
-&trans           &kp R   &kp G           &kp M                 &trans        &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
-&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &lt 5 PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
+&trans           &kp W   &kp K           &trans          &trans                                   &trans           &trans       &kp I  &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H      &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M           &trans     &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
+&trans           &trans  &trans          &trans          &comaperi  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -401,10 +401,10 @@
 
         SCROLL {
             bindings = <
-&trans         &kp LS(W)  &kp LS(K)  &trans     &trans                         &trans     &trans     &kp LS(I)  &kp LS(O)  &trans
-&kp LS(MINUS)  &kp LS(S)  &kp LS(N)  &kp LS(T)  &kp LS(H)  &trans      &trans  &kp LS(Y)  &kp LS(A)  &kp LS(E)  &kp LS(U)  &kp LS(P)
-&trans         &kp LS(R)  &kp LS(G)  &kp LS(M)  &kp LS(B)  &trans      &trans  &trans     &kp LS(D)  &kp LS(F)  &kp LS(Z)  &trans
-&trans         &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
+&trans  &kp LS(W)  &kp LS(K)  &trans     &trans                         &trans     &trans     &kp LS(I)  &kp LS(O)  &trans
+&trans  &kp LS(S)  &kp LS(N)  &kp LS(T)  &kp LS(H)  &trans      &trans  &kp LS(Y)  &kp LS(A)  &kp LS(E)  &kp LS(U)  &kp LS(P)
+&trans  &kp LS(R)  &kp LS(G)  &kp LS(M)  &kp LS(B)  &trans      &trans  &trans     &kp LS(D)  &kp LS(F)  &kp LS(Z)  &trans
+&trans  &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
