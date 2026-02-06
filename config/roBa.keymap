@@ -53,7 +53,7 @@
         };
 
         COMBO_LQ {
-            bindings = <&LQ>;
+            bindings = <&kp Q>;
             key-positions = <12 11>;
             layers = <0>;
         };
@@ -117,6 +117,21 @@
         b {
             bindings = <&kp B>;
             key-positions = <13 38>;
+        };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <41 20>;
+        };
+
+        back {
+            bindings = <&mkp MB4>;
+            key-positions = <41 21>;
+        };
+
+        l {
+            bindings = <&kp L>;
+            key-positions = <38 11>;
         };
     };
 
