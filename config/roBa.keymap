@@ -38,7 +38,7 @@
         };
 
         COMBO_HENKAN {
-            bindings = <&henkanC>;
+            bindings = <&henkanMenu>;
             key-positions = <18 19>;
             layers = <0>;
         };
@@ -198,9 +198,9 @@
             tapping-term-ms = <280>;
         };
 
-        forvscode: forvscode {
+        forvs: forvs {
             compatible = "zmk,behavior-tap-dance";
-            label = "FORVSCODE";
+            label = "FORVS";
             #binding-cells = <0>;
             bindings = <&kp LS(LC(F))>, <&kp LS(LC(E))>;
 
@@ -243,9 +243,9 @@
             tapping-term-ms = <270>;
         };
 
-        henkanC: henkanC {
+        henkanMenu: henkanMenu {
             compatible = "zmk,behavior-tap-dance";
-            label = "HENKANC";
+            label = "HENKANMENU";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN>, <&kp LG(X)>;
 
@@ -362,7 +362,7 @@
 &trans  &trans  &trans       &trans   &trans                            &trans  &trans        &kp N8        &kp N9        &trans
 &kp F2  &enzan  &corronsemi  &search  &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
 &trans  &trans  &trans       &trans   &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans       &sim     &trans  &forvscode        &trans  &trans                                            &trans
+&trans  &trans  &trans       &trans   &sim    &forvs            &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
