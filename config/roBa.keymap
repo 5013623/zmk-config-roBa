@@ -122,12 +122,12 @@
 
         l {
             bindings = <&kp L>;
-            key-positions = <38 11>;
+            key-positions = <41 21>;
         };
 
         co_teams {
             bindings = <&teams>;
-            key-positions = <41 21>;
+            key-positions = <41 17>;
         };
     };
 
