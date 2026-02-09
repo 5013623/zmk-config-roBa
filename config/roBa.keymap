@@ -115,11 +115,6 @@
             key-positions = <41 20>;
         };
 
-        back {
-            bindings = <&mkp MB4>;
-            key-positions = <41 8>;
-        };
-
         l {
             bindings = <&kp L>;
             key-positions = <41 30>;
@@ -386,10 +381,10 @@
 
         TEAMS {
             bindings = <
-&trans  &trans           &trans             &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &teams  &trans  &trans      &trans  &trans  &mkp MB1  &mouse34  &mouse25  &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans           &trans             &trans  &trans                      &trans  &trans    &kp UP_ARROW  &trans     &trans
+&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans  &trans      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans  &trans    &trans        &trans     &trans
+&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -406,10 +401,10 @@
 
         SCROLL {
             bindings = <
-&trans  &kp LS(W)  &kp LS(K)  &trans     &trans                         &trans     &trans     &kp LS(I)  &kp LS(O)  &trans
-&trans  &kp LS(S)  &kp LS(N)  &kp LS(T)  &kp LS(H)  &trans      &trans  &kp LS(Y)  &kp LS(A)  &kp LS(E)  &kp LS(U)  &kp LS(P)
-&trans  &kp LS(R)  &kp LS(G)  &kp LS(M)  &kp LS(B)  &trans      &trans  &trans     &kp LS(D)  &kp LS(F)  &kp LS(Z)  &trans
-&trans  &trans     &trans     &trans     &trans     &trans      &trans  &trans                                      &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(SEMICOLON) LC(MINUS)>;
