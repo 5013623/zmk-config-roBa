@@ -106,7 +106,7 @@
         };
 
         b {
-            bindings = <&kp B>;
+            bindings = <&kp COMMA>;
             key-positions = <13 38>;
         };
 
@@ -348,10 +348,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans                &trans                                               &trans           &trans       &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H                  &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
-&trans           &kp R   &kp G           &kp M                 &kp B                  &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
-&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
+&trans           &kp W   &kp K           &trans          &trans                                               &trans           &trans       &kp I  &kp O  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans       &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M           &kp B                  &trans           &trans       &trans           &kp D        &kp F  &kp Z  &trans
+&trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &lt 3 ENTER  &lt 1 BACKSPACE                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -362,7 +362,7 @@
 &trans  &trans  &trans       &trans   &trans                            &trans  &trans        &kp N8        &kp N9        &trans
 &kp F2  &enzan  &corronsemi  &search  &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
 &trans  &trans  &trans       &trans   &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans       &trans   &sim    &forvs            &trans  &trans                                            &trans
+&trans  &trans  &trans       &trans   &trans  &forvs            &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
@@ -382,7 +382,7 @@
         TEAMS {
             bindings = <
 &trans  &trans           &trans             &trans  &trans                      &trans      &trans    &kp UP_ARROW  &trans     &trans
-&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans  &trans      &trans  &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &sim    &trans  &trans      &trans  &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
 &trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans      &trans    &trans        &trans     &trans
 &trans  &trans           &trans             &trans  &trans  &trans      &trans  &kp DELETE                                     &trans
             >;
