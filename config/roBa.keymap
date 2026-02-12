@@ -127,13 +127,13 @@
 
         eight {
             bindings = <&kp N8>;
-            key-positions = <19 18>;
+            key-positions = <18 20>;
             layers = <1>;
         };
 
         nine {
             bindings = <&kp N9>;
-            key-positions = <20 19>;
+            key-positions = <21 18>;
             layers = <1>;
         };
 
@@ -154,7 +154,7 @@
 
         seven {
             bindings = <&kp N7>;
-            key-positions = <18 20>;
+            key-positions = <18 19>;
             layers = <1>;
         };
     };
