@@ -333,15 +333,6 @@
             tapping-term-ms = <270>;
         };
 
-        XJ: XJ {
-            compatible = "zmk,behavior-tap-dance";
-            label = "XJ";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&kp J>;
-
-            tapping-term-ms = <270>;
-        };
-
         list: list {
             compatible = "zmk,behavior-tap-dance";
             label = "LIST";
