@@ -133,7 +133,7 @@
 
         nine {
             bindings = <&kp N9>;
-            key-positions = <18 20>;
+            key-positions = <20 19>;
             layers = <1>;
         };
 
@@ -150,6 +150,12 @@
         y {
             bindings = <&kp Y>;
             key-positions = <10 38>;
+        };
+
+        seven {
+            bindings = <&kp N7>;
+            key-positions = <18 20>;
+            layers = <1>;
         };
     };
 
