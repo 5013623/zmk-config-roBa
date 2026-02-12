@@ -122,7 +122,7 @@
 
         co_teams {
             bindings = <&teams>;
-            key-positions = <41 17>;
+            key-positions = <41 32>;
         };
 
         eight {
