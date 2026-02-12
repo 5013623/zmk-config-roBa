@@ -125,18 +125,6 @@
             key-positions = <41 32>;
         };
 
-        eight {
-            bindings = <&kp N8>;
-            key-positions = <18 20>;
-            layers = <1>;
-        };
-
-        nine {
-            bindings = <&kp N9>;
-            key-positions = <20 19>;
-            layers = <1>;
-        };
-
         b {
             bindings = <&kp B>;
             key-positions = <38 11>;
@@ -147,15 +135,25 @@
             key-positions = <38 12>;
         };
 
-        y {
-            bindings = <&kp Y>;
+        z {
+            bindings = <&kp Z>;
             key-positions = <10 38>;
         };
 
         seven {
             bindings = <&kp N7>;
-            key-positions = <18 19>;
+            key-positions = <18 20>;
             layers = <1>;
+        };
+
+        f {
+            bindings = <&kp F>;
+            key-positions = <41 31>;
+        };
+
+        search {
+            bindings = <&kp LC(F)>;
+            key-positions = <41 30>;
         };
     };
 
@@ -373,8 +371,8 @@
         default_layer {
             bindings = <
 &trans           &kp W   &kp K           &trans          &trans                                                    &trans           &trans       &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
-&trans           &kp R   &kp G           &kp M           &kp B                  &trans           &trans            &trans           &kp D        &kp F  &kp Z  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &trans                 &to 4            &trans            &trans           &mt LCTRL A  &kp E  &kp U  &lt 3 P
+&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp D        &kp Y  &kp Z  &trans
 &trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                             &trans
             >;
 
