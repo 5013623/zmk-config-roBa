@@ -125,14 +125,14 @@
             key-positions = <41 32>;
         };
 
-        z {
-            bindings = <&kp Z>;
-            key-positions = <10 38>;
+        b {
+            bindings = <&kp B>;
+            key-positions = <38 11>;
         };
 
-        w {
-            bindings = <&kp W>;
-            key-positions = <23 38>;
+        h {
+            bindings = <&kp H>;
+            key-positions = <38 12>;
         };
     };
 
