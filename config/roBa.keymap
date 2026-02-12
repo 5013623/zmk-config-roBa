@@ -130,10 +130,9 @@
             key-positions = <10 38>;
         };
 
-        seven {
-            bindings = <&kp N7>;
-            key-positions = <18 20>;
-            layers = <1>;
+        w {
+            bindings = <&kp W>;
+            key-positions = <23 38>;
         };
     };
 
