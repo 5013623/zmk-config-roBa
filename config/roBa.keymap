@@ -81,7 +81,7 @@
 
         COMBO_lock {
             bindings = <&Lock>;
-            key-positions = <11 13>;
+            key-positions = <41 30>;
             layers = <0 4>;
         };
 
@@ -128,6 +128,16 @@
         b {
             bindings = <&kp B>;
             key-positions = <38 12>;
+        };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <38 11>;
+        };
+
+        d {
+            bindings = <&kp D>;
+            key-positions = <11 13>;
         };
     };
 
