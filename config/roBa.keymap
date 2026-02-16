@@ -112,7 +112,7 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <41 20>;
+            key-positions = <41 31>;
         };
 
         l {
@@ -138,6 +138,11 @@
         d {
             bindings = <&kp D>;
             key-positions = <11 13>;
+        };
+
+        o {
+            bindings = <&kp O>;
+            key-positions = <20 41>;
         };
     };
 
