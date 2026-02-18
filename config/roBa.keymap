@@ -44,15 +44,9 @@
         };
 
         COMBO_LQ {
-            bindings = <&kp Q>;
+            bindings = <&qj>;
             key-positions = <12 11>;
             layers = <0>;
-        };
-
-        COMBO_search {
-            bindings = <&none>;
-            key-positions = <30 32>;
-            layers = <0 4>;
         };
 
         COMBO_list {
@@ -84,11 +78,6 @@
             key-positions = <23 25>;
         };
 
-        combo_XJ {
-            bindings = <&kp J>;
-            key-positions = <30 41>;
-        };
-
         c {
             bindings = <&kp C>;
             key-positions = <41 18>;
@@ -106,7 +95,7 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <41 32>;
+            key-positions = <41 30>;
         };
 
         l {
@@ -332,6 +321,14 @@
             bindings = <&mkp MB2>, <&mkp MB5>;
 
             tapping-term-ms = <265>;
+        };
+
+        qj: qj {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QJ";
+            #binding-cells = <0>;
+            tapping-term-ms = <270>;
+            bindings = <&kp Q>, <&kp J>;
         };
     };
 
