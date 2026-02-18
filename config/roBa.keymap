@@ -38,14 +38,8 @@
         };
 
         COMBO_HENKAN {
-            bindings = <&henkanMenu>;
+            bindings = <&henkanCut>;
             key-positions = <18 19>;
-            layers = <0>;
-        };
-
-        COMBO_LQ {
-            bindings = <&qj>;
-            key-positions = <12 11>;
             layers = <0>;
         };
 
@@ -73,11 +67,6 @@
             layers = <0 4>;
         };
 
-        COMBO_screenshot {
-            bindings = <&screenshot>;
-            key-positions = <23 25>;
-        };
-
         c {
             bindings = <&kp C>;
             key-positions = <41 18>;
@@ -85,7 +74,7 @@
 
         v {
             bindings = <&kp V>;
-            key-positions = <41 31>;
+            key-positions = <41 32>;
         };
 
         comma {
@@ -251,9 +240,9 @@
             tapping-term-ms = <270>;
         };
 
-        henkanMenu: henkanMenu {
+        henkanCut: henkanCut {
             compatible = "zmk,behavior-tap-dance";
-            label = "HENKANMENU";
+            label = "HENKANCUT";
             #binding-cells = <0>;
             bindings = <&kp INT_HENKAN>, <&kp LC(X)>;
 
@@ -274,15 +263,6 @@
             label = "LOCK";
             #binding-cells = <0>;
             bindings = <&kp LG(E)>, <&kp LG(L)>;
-
-            tapping-term-ms = <270>;
-        };
-
-        screenshot: screenshot {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SCREENSHOT";
-            #binding-cells = <0>;
-            bindings = <&kp LG(R)>, <&kp LS(LG(S))>;
 
             tapping-term-ms = <270>;
         };
@@ -322,14 +302,6 @@
 
             tapping-term-ms = <265>;
         };
-
-        qj: qj {
-            compatible = "zmk,behavior-tap-dance";
-            label = "QJ";
-            #binding-cells = <0>;
-            tapping-term-ms = <270>;
-            bindings = <&kp Q>, <&kp J>;
-        };
     };
 
     keymap {
@@ -339,7 +311,7 @@
             bindings = <
 &trans           &trans  &kp K           &trans          &trans                                                    &trans           &trans       &trans  &trans  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
-&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &kp F   &kp U   &trans
+&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &trans  &kp F   &trans
 &trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
             >;
 
@@ -360,7 +332,7 @@
         ARROW {
             bindings = <
 &trans      &trans    &trans            &trans          &trans                                          &trans      &trans    &trans    &trans     &trans
-&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp UP_ARROW
 &trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &trans    &trans    &trans     &trans
 &trans      &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                 &trans
             >;
@@ -370,10 +342,10 @@
 
         TEAMS {
             bindings = <
-&trans  &trans           &trans     &trans  &trans                      &trans      &trans  &trans           &trans             &trans
-&trans  &kp LC(PAGE_UP)  &kakkotap  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans
-&trans  &trans           &trans     &trans  &trans  &trans      &trans  &trans      &trans  &trans           &trans             &trans
-&trans  &trans           &trans     &trans  &trans  &trans      &trans  &kp DELETE                                              &trans
+&trans  &trans  &trans     &trans  &trans                      &trans      &trans  &trans           &trans             &trans
+&kp Q   &kp J   &kakkotap  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans
+&trans  &trans  &trans     &trans  &trans  &trans      &trans  &trans      &trans  &trans           &trans             &trans
+&trans  &trans  &trans     &trans  &trans  &trans      &trans  &kp DELETE                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
