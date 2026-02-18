@@ -150,18 +150,6 @@
             key-positions = <41 19>;
         };
 
-        eight {
-            bindings = <&kp N8>;
-            key-positions = <19 18>;
-            layers = <1>;
-        };
-
-        nine {
-            bindings = <&kp N9>;
-            key-positions = <18 20>;
-            layers = <1>;
-        };
-
         up {
             bindings = <&kp UP_ARROW>;
             key-positions = <18 20>;
@@ -404,10 +392,10 @@
 
         ARROW {
             bindings = <
-&trans      &trans    &trans            &trans          &trans                                          &trans      &trans    &kp UP_ARROW  &trans     &trans
-&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &trans    &trans        &trans     &trans
-&trans      &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                     &trans
+&trans      &trans    &trans            &trans          &trans                                          &trans      &trans    &trans    &trans     &trans
+&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &trans    &trans    &trans     &trans
+&trans      &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -415,10 +403,10 @@
 
         TEAMS {
             bindings = <
-&trans  &trans           &trans             &trans  &trans                      &trans      &trans  &kp UP_ARROW  &trans     &trans
-&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans      &trans  &trans        &trans     &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &kp DELETE                                   &trans
+&trans  &trans           &trans             &trans  &trans                      &trans      &trans  &trans       &trans         &trans
+&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp PAGE_UP  &kp PAGE_DOWN  &trans
+&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans      &trans  &trans       &trans         &trans
+&trans  &trans           &trans             &trans  &trans  &trans      &trans  &kp DELETE                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
