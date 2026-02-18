@@ -384,7 +384,7 @@
             bindings = <
 &trans           &trans  &kp K           &trans          &trans                                                    &trans           &trans       &trans  &trans  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
-&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &kp F   &trans  &trans
+&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &kp F   &kp U   &trans
 &trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
             >;
 
@@ -393,10 +393,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans       &trans        &trans                            &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &enzan  &corronsemi  &search       &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &enzan  &corronsemi  &kp NUMBER_3  &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans       &trans        &trans  &forvs            &trans  &trans                                            &trans
+&trans        &trans        &trans        &trans        &trans                            &trans        &trans  &trans  &trans  &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &bt BT_SEL 1      &trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
+&trans        &enzan        &corronsemi   &search       &trans  &trans            &trans  &trans        &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans  &forvs            &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
@@ -415,10 +415,10 @@
 
         TEAMS {
             bindings = <
-&trans  &trans           &trans             &trans  &trans                      &trans      &trans    &kp UP_ARROW  &trans     &trans
-&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &sim    &trans  &trans      &trans  &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans      &trans    &trans        &trans     &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &kp DELETE                                     &trans
+&trans  &trans           &trans             &trans  &trans                      &trans      &trans  &kp UP_ARROW  &trans     &trans
+&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans      &trans  &trans        &trans     &trans
+&trans  &trans           &trans             &trans  &trans  &trans      &trans  &kp DELETE                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
