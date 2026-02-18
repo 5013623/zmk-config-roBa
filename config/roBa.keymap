@@ -141,12 +141,12 @@
         };
 
         o {
-            bindings = <&kp O>;
+            bindings = <&kp U>;
             key-positions = <20 41>;
         };
 
         i {
-            bindings = <&kp I>;
+            bindings = <&kp E>;
             key-positions = <41 19>;
         };
 
@@ -383,7 +383,7 @@
         default_layer {
             bindings = <
 &trans           &kp W   &kp K           &trans          &trans                                                    &trans           &trans       &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp E  &kp U  &lt 3 P
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I  &kp O  &lt 3 P
 &trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp D        &kp F  &kp Z  &trans
 &trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                             &trans
             >;
