@@ -50,13 +50,13 @@
         };
 
         COMBO_search {
-            bindings = <&list>;
+            bindings = <&none>;
             key-positions = <30 32>;
             layers = <0 4>;
         };
 
         COMBO_list {
-            bindings = <&favV>;
+            bindings = <&FavList>;
             key-positions = <20 19>;
             layers = <0 4>;
         };
@@ -73,12 +73,6 @@
             layers = <0 4>;
         };
 
-        COMBO_kakkotap {
-            bindings = <&kakkotap>;
-            key-positions = <32 31>;
-            layers = <1 0>;
-        };
-
         COMBO_lock {
             bindings = <&Lock>;
             key-positions = <11 13>;
@@ -92,7 +86,7 @@
 
         combo_XJ {
             bindings = <&kp J>;
-            key-positions = <30 31>;
+            key-positions = <30 41>;
         };
 
         c {
@@ -122,7 +116,7 @@
 
         co_teams {
             bindings = <&teams>;
-            key-positions = <41 30>;
+            key-positions = <41 17>;
         };
 
         b {
@@ -148,12 +142,6 @@
         i {
             bindings = <&kp E>;
             key-positions = <41 19>;
-        };
-
-        up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <18 20>;
-            layers = <2>;
         };
     };
 
@@ -278,18 +266,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HENKANMENU";
             #binding-cells = <0>;
-            bindings = <&kp INT_HENKAN>, <&kp LG(X)>;
+            bindings = <&kp INT_HENKAN>, <&kp LC(X)>;
 
             tapping-term-ms = <270>;
-        };
-
-        comaperi: comaperi {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COMAPERI";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&mt LSHIFT PERIOD>;
-
-            tapping-term-ms = <280>;
         };
 
         shortcuts: shortcuts {
@@ -328,22 +307,13 @@
             tapping-term-ms = <270>;
         };
 
-        favV: favV {
+        FavList: FavList {
             compatible = "zmk,behavior-tap-dance";
-            label = "FAVV";
+            label = "FAVLIST";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(O))>, <&kp LG(TAB)>;
+            bindings = <&kp LS(LC(O))>, <&kp LC(L)>;
 
             tapping-term-ms = <270>;
-        };
-
-        list: list {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LIST";
-            #binding-cells = <0>;
-            bindings = <&kp LC(L)>, <&kp LC(X)>;
-
-            tapping-term-ms = <265>;
         };
 
         mouse34: mouse34 {
@@ -403,10 +373,10 @@
 
         TEAMS {
             bindings = <
-&trans  &trans           &trans             &trans  &trans                      &trans      &trans  &trans       &trans         &trans
-&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp PAGE_UP  &kp PAGE_DOWN  &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &trans      &trans  &trans       &trans         &trans
-&trans  &trans           &trans             &trans  &trans  &trans      &trans  &kp DELETE                                      &trans
+&trans  &trans           &trans     &trans  &trans                      &trans      &trans  &trans           &trans             &trans
+&trans  &kp LC(PAGE_UP)  &kakkotap  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans
+&trans  &trans           &trans     &trans  &trans  &trans      &trans  &trans      &trans  &trans           &trans             &trans
+&trans  &trans           &trans     &trans  &trans  &trans      &trans  &kp DELETE                                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
