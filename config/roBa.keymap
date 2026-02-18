@@ -382,10 +382,10 @@
 
         default_layer {
             bindings = <
-&trans           &kp W   &kp K           &trans          &trans                                                    &trans           &trans       &kp I  &kp O  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I  &kp O  &lt 3 P
-&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp D        &kp F  &kp Z  &trans
-&trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                             &trans
+&trans           &trans  &kp K           &trans          &trans                                                    &trans           &trans       &trans  &trans  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
+&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &kp F   &trans  &trans
+&trans           &trans  &trans          &trans          &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -393,10 +393,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                            &trans  &trans        &kp N8        &kp N9        &trans
-&kp F2  &enzan        &corronsemi   &search       &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans        &trans        &trans        &trans  &forvs            &trans  &trans                                            &trans
+&trans  &trans  &trans       &trans        &trans                            &trans  &trans        &kp N8        &kp N9        &trans
+&kp F2  &enzan  &corronsemi  &search       &trans  &bt BT_SEL 1      &trans  &kp N7  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&trans  &enzan  &corronsemi  &kp NUMBER_3  &trans  &trans            &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans       &trans        &trans  &forvs            &trans  &trans                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
