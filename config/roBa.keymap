@@ -48,6 +48,7 @@
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
             layers = <0>;
+            timeout-ms = <70>;
         };
 
         COMBO_HENKAN {
@@ -112,11 +113,13 @@
         o {
             bindings = <&kp U>;
             key-positions = <20 41>;
+            timeout-ms = <70>;
         };
 
         i {
             bindings = <&kp E>;
             key-positions = <41 19>;
+            timeout-ms = <70>;
         };
     };
 
