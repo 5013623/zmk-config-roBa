@@ -117,7 +117,7 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <38 23>;
+            key-positions = <38 10>;
         };
 
         d {
@@ -355,10 +355,10 @@
 
         TEAMS {
             bindings = <
-&trans  &trans  &trans     &trans  &trans                      &trans      &trans  &trans           &trans             &trans
-&kp Q   &kp J   &kakkotap  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans
-&trans  &trans  &trans     &trans  &trans  &trans      &trans  &trans      &trans  &trans           &trans             &trans
-&trans  &trans  &trans     &trans  &trans  &trans      &trans  &kp DELETE                                              &trans
+&trans  &trans  &trans     &trans  &trans                      &trans      &trans  &trans  &trans  &trans
+&kp Q   &kp J   &kakkotap  &sim    &trans  &trans      &trans  &trans      &kp F2  &kp X   &kp V   &trans
+&trans  &trans  &trans     &trans  &trans  &trans      &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans  &trans      &trans  &kp DELETE                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
