@@ -25,6 +25,19 @@
         wait-ms = <5>;
         tap-ms = <5>;
     };
+
+    arrows3 {
+        layers = <2>;
+        bindings =
+            <&kp LC(PAGE_DOWN)>,
+            <&kp  LC(PAGE_UP)>,
+            <&kp  LG(TAB)>,
+            <&kp LG(X)>;
+
+        tick = <150>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
