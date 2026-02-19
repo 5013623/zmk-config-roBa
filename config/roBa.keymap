@@ -85,19 +85,9 @@
             key-positions = <41 18>;
         };
 
-        v {
-            bindings = <&kp V>;
-            key-positions = <41 32>;
-        };
-
         comma {
             bindings = <&kp COMMA>;
             key-positions = <13 38>;
-        };
-
-        x {
-            bindings = <&kp X>;
-            key-positions = <41 30>;
         };
 
         l {
