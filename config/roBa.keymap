@@ -81,8 +81,8 @@
         };
 
         comma {
-            bindings = <&kp K>;
-            key-positions = <38 12>;
+            bindings = <&kp COMMA>;
+            key-positions = <38 10>;
         };
 
         l {
@@ -97,7 +97,7 @@
 
         b {
             bindings = <&kp B>;
-            key-positions = <38 10>;
+            key-positions = <38 14>;
         };
 
         z {
@@ -120,6 +120,11 @@
             bindings = <&kp E>;
             key-positions = <41 19>;
             timeout-ms = <80>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <38 12>;
         };
     };
 
