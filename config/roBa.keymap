@@ -82,7 +82,7 @@
 
         comma {
             bindings = <&kp K>;
-            key-positions = <13 38>;
+            key-positions = <38 12>;
         };
 
         l {
@@ -97,29 +97,29 @@
 
         b {
             bindings = <&kp B>;
-            key-positions = <38 12>;
+            key-positions = <38 10>;
         };
 
         z {
             bindings = <&kp Z>;
-            key-positions = <38 10>;
+            key-positions = <38 11>;
         };
 
         d {
             bindings = <&kp D>;
-            key-positions = <11 38>;
+            key-positions = <38 13>;
         };
 
         o {
             bindings = <&kp U>;
             key-positions = <20 41>;
-            timeout-ms = <70>;
+            timeout-ms = <80>;
         };
 
         i {
             bindings = <&kp E>;
             key-positions = <41 19>;
-            timeout-ms = <70>;
+            timeout-ms = <80>;
         };
     };
 
@@ -309,10 +309,10 @@
 
         DEFAULT {
             bindings = <
-&trans           &trans  &kp K           &trans                &trans                                                    &trans           &trans       &trans  &trans  &trans
-&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T        &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
-&trans           &kp R   &kp G           &kp M                 &trans                 &trans           &trans            &trans           &kp W        &trans  &kp F   &trans
-&trans           &trans  &trans          &mt LEFT_SHIFT COMMA  &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
+&trans           &trans  &trans          &trans          &trans                                                    &trans           &trans       &trans  &trans  &trans
+&mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
+&trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &trans  &kp F   &trans
+&trans           &trans  &trans          &lt 3 COMMA     &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
