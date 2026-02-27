@@ -97,7 +97,7 @@
 
         b {
             bindings = <&kp B>;
-            key-positions = <38 14>;
+            key-positions = <11 12>;
         };
 
         z {
@@ -110,21 +110,22 @@
             key-positions = <38 13>;
         };
 
-        o {
+        u {
             bindings = <&kp U>;
             key-positions = <20 41>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
-        i {
+        e {
             bindings = <&kp E>;
             key-positions = <41 19>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <38 12>;
+            timeout-ms = <100>;
         };
     };
 
