@@ -127,16 +127,6 @@
             key-positions = <38 12>;
             timeout-ms = <100>;
         };
-
-        v {
-            bindings = <&kp V>;
-            key-positions = <32 41>;
-        };
-
-        x {
-            bindings = <&kp X>;
-            key-positions = <38 23>;
-        };
     };
 
     macros {
