@@ -102,12 +102,12 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <38 23>;
+            key-positions = <38 11>;
         };
 
         d {
             bindings = <&kp D>;
-            key-positions = <38 11>;
+            key-positions = <38 13>;
         };
 
         u {
