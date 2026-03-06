@@ -318,7 +318,7 @@
 &trans           &trans  &trans          &trans          &trans                                                    &trans           &trans       &trans  &trans  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
 &trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &trans  &kp F   &trans
-&trans           &trans  &trans          &lt 3 B         &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
+&trans           &trans  &trans          &lt 3 A         &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
