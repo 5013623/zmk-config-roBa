@@ -47,14 +47,14 @@
         co_MUHENKAN {
             bindings = <&kp INT_MUHENKAN>;
             key-positions = <12 13>;
-            layers = <0>;
+            layers = <0 4>;
             timeout-ms = <70>;
         };
 
         COMBO_HENKAN {
             bindings = <&henkanCut>;
             key-positions = <18 19>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         COMBO_list {
