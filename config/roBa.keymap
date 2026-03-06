@@ -113,19 +113,29 @@
         u {
             bindings = <&kp U>;
             key-positions = <20 41>;
-            timeout-ms = <100>;
+            timeout-ms = <150>;
         };
 
         e {
             bindings = <&kp E>;
             key-positions = <41 19>;
-            timeout-ms = <100>;
+            timeout-ms = <150>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <38 12>;
             timeout-ms = <100>;
+        };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <38 13>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <41 32>;
         };
     };
 
