@@ -341,10 +341,10 @@
 
         NUM {
             bindings = <
-&trans        &trans        &trans        &trans        &trans                            &trans  &trans        &trans  &trans  &trans
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &bt BT_SEL 1      &trans  &trans  &kp N7        &kp N8  &kp N9  &kp N0
-&trans        &enzan        &corronsemi   &kp N5        &trans  &trans            &trans  &trans  &kp NUMBER_6  &trans  &trans  &trans
-&trans        &trans        &trans        &search       &trans  &forvs            &trans  &trans                                &trans
+&trans        &trans        &trans        &trans        &trans                            &trans  &trans        &trans  &trans       &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans  &bt BT_SEL 1      &trans  &trans  &kp N7        &kp N8  &kp N9       &kp N0
+&trans        &enzan        &corronsemi   &kp N5        &trans  &trans            &trans  &trans  &kp NUMBER_6  &trans  &corronsemi  &trans
+&trans        &trans        &trans        &search       &trans  &forvs            &trans  &trans                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
