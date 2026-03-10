@@ -81,7 +81,7 @@
         };
 
         comma {
-            bindings = <&kp COMMA>;
+            bindings = <&kp Q>;
             key-positions = <38 10>;
         };
 
@@ -136,6 +136,11 @@
         v {
             bindings = <&kp V>;
             key-positions = <41 32>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <38 25>;
         };
     };
 
@@ -328,7 +333,7 @@
 &trans           &trans  &trans          &trans          &trans                                                    &trans           &trans       &trans  &trans  &trans
 &mt LCTRL MINUS  &kp S   &mt LEFT_ALT N  &mt LEFT_GUI T  &kp H                  &to 4            &trans            &kp Y            &mt LCTRL A  &kp I   &kp O   &lt 3 P
 &trans           &kp R   &kp G           &kp M           &trans                 &trans           &trans            &trans           &kp W        &trans  &kp F   &trans
-&trans           &trans  &trans          &lt 3 B         &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
+&trans           &trans  &trans          &lt 3 COMMA     &mt LEFT_SHIFT PERIOD  &lt 2 SPACE      &mt LSHIFT ENTER  &lt 1 BACKSPACE                               &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -359,7 +364,7 @@
         OTHER {
             bindings = <
 &trans  &trans  &trans    &trans     &trans                      &trans      &trans  &trans  &trans  &trans
-&kp Q   &kp J   &atunder  &kakkotap  &sim    &trans      &trans  &trans      &trans  &trans  &trans  &trans
+&trans  &trans  &atunder  &kakkotap  &trans  &trans      &trans  &trans      &sim    &trans  &trans  &trans
 &trans  &trans  &trans    &trans     &trans  &trans      &trans  &trans      &trans  &trans  &trans  &trans
 &trans  &trans  &trans    &trans     &trans  &trans      &trans  &kp DELETE                          &trans
             >;
