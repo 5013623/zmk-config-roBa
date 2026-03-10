@@ -102,12 +102,12 @@
 
         z {
             bindings = <&kp Z>;
-            key-positions = <38 23>;
+            key-positions = <38 11>;
         };
 
         d {
             bindings = <&kp D>;
-            key-positions = <38 11>;
+            key-positions = <38 13>;
         };
 
         u {
@@ -130,7 +130,7 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <38 13>;
+            key-positions = <38 23>;
         };
 
         v {
@@ -347,10 +347,10 @@
 
         ARROW {
             bindings = <
-&trans      &trans    &trans            &trans          &trans                                          &trans      &trans    &trans    &trans     &trans
-&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans                &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp UP_ARROW
-&trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans                &trans      &trans    &trans    &kp F2     &trans
-&trans      &trans    &trans            &trans          &trans  &trans            &mt LEFT_SHIFT ENTER  &kp DELETE                                 &trans
+&trans      &trans    &trans            &trans          &trans                            &trans      &trans    &trans    &trans     &trans
+&kp ESCAPE  &kp HOME  &mt LEFT_ALT END  &kp TAB         &trans  &bt BT_SEL 0      &trans  &trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp UP_ARROW
+&trans      &trans    &trans            &kp LA(LS(F4))  &trans  &trans            &trans  &trans      &trans    &trans    &kp F2     &trans
+&trans      &trans    &trans            &trans          &trans  &trans            &trans  &kp DELETE                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
