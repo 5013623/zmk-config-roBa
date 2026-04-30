@@ -113,13 +113,13 @@
         u {
             bindings = <&kp U>;
             key-positions = <20 41>;
-            timeout-ms = <150>;
+            timeout-ms = <200>;
         };
 
         e {
             bindings = <&kp E>;
             key-positions = <41 19>;
-            timeout-ms = <150>;
+            timeout-ms = <200>;
         };
 
         k {
